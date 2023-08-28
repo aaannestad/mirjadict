@@ -55,6 +55,8 @@ for letter in letterlist:
 
 #actually do the things
 
+#NEXTUP - handle derived-from!!
+
 def writeentry(entry,derived,indentnum):
 
     def writeline(line):
