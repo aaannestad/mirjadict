@@ -1,0 +1,35 @@
+- entry: &kata
+    form: kata
+    tone: H
+    class: V
+    etym:
+      derived-from:
+    def:
+      - pattern: \subj OBJ
+        senses:
+          - desc: \subj takes a train or other large, articulated, guided vehicle as transport
+            example: TBD
+      - derived:
+        - form: katassa
+          tone: H
+          class: V
+          #etym?
+          def:
+          - pattern: \subj
+            senses:
+              - desc: \subj, which is a train etc., is located
+                example: TBD
+          - pattern: OBL OBJ
+            senses:
+              - desc: OBL possesses \subj, which is a train etc.
+                example: TBD
+        - form: katami
+          tone: H
+          class: V
+          #etym?
+          def:
+            - pattern: \subj OBJ
+              senses:
+                - desc: \subj drives OBJ (which is a train etc.)
+                  example: TBD
+            

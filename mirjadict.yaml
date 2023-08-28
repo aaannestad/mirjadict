@@ -1,0 +1,103 @@
+---
+- &kata
+    form: kata
+    tone: H
+    class: V
+    etym:
+      derived-from:
+    def:
+      - pattern: SUBJ
+        senses:
+          - desc: SUBJ takes a train or other large, articulated, guided vehicle as transport
+            example: TBD
+      - pattern: SUBJ OBJ
+        senses:
+          - desc: SUBJ takes OBJ as transport; OBJ is a train etc.
+            example: TBD
+      - derived:
+        - form: katassa
+          tone: H
+          class: V
+          #etym?
+          def:
+          - pattern: SUBJ
+            senses:
+              - desc: SUBJ is located; SUBJ is a train etc.
+                example: TBD
+          - pattern: OBL OBJ
+            senses:
+              - desc: OBL possesses OBJ; OBJ is a train etc.
+                example: TBD
+        - form: katami
+          tone: HL
+          class: V
+          #etym?
+          def:
+            - pattern: SUBJ OBJ
+              senses:
+                - desc: SUBJ drives or controls OBJ; OBJ is a train etc.
+                  example: TBD
+          # TODO - word for 'train moves'
+
+- &sima
+    form: sima
+    tone: HL
+    class: V
+    def:
+      - pattern: SUBJ
+        senses:
+          - desc: SUBJ drives a car or other wheeled vehicle one rides inside but cannot move freely inside
+            example: TBD
+      - pattern: SUBJ OBJ
+        senses:
+          - desc: SUBJ drives OBJ, which is a car etc.
+            example: TBD
+      - derived:
+        - form: simassa
+          tone: HL
+          class: V
+          #etym?
+          def:
+          - pattern: SUBJ
+            senses:
+              - desc: SUBJ is located; SUBJ is a car etc.
+                example: TBD
+          - pattern: OBL OBJ
+            senses:
+              - desc: OBL possesses OBJ; OBJ is a car etc.
+                example: TBD
+        #TODO - word for 'car moves'
+
+- &don
+    form: don
+    tone: L
+    class: V
+    def:
+      - pattern: SUBJ OBJ
+        senses:
+          - desc: SUBJ drinks OBJ
+            example: TBD
+
+- &mir
+    form: mir
+    tone: HL
+    class: V
+    def:
+      - pattern: SUBJ COMP
+        senses:
+          - desc: SUBJ says COMP
+            example: TBD
+
+- &mirja
+    form: mirja
+    tone: HL
+    class: N
+    etym: 
+      derived-from: *mir
+      relation: tool
+    def:
+      - senses:
+          - desc: language; a language
+            example: TBD
+          - desc: Mirja, the Mirja language
+            example: TBD

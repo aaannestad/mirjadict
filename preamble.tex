@@ -1,0 +1,43 @@
+\usepackage{fontspec}
+\setmainfont[Numbers=OldStyle]{Junicode}
+
+\usepackage{multicol}
+
+\newcounter{patterns}
+\newcounter{senses}
+
+\newenvironment{lettergroup}[1]{
+	{\LARGE #1}%
+	\begin{multicols}{2}%
+	}{%
+	\end{multicols}%
+	}
+	
+\newenvironment{lemma}[3]{%
+	\setcounter{patterns}{1} \setcounter{senses}{1}%
+	\noindent \textbf{#1}	 \textit{#2}, #3% HANGING INDENT
+	}{
+	\\
+	}
+	
+\newenvironment{pattern}[1]{%
+	\setcounter{senses}{1}%
+	\Roman{patterns}. #1%
+	}{%
+	\addtocounter{patterns}{1}%
+	}
+	
+\newenvironment{derivlemma}[3]{%
+	\setcounter{patterns}{1} \setcounter{senses}{1}%
+	\\
+	$\rightarrow$ \textbf{#1} \textit{#2}, #3
+	}{%
+	}
+	
+\newcommand{\subj}{\textsc{sbj}}
+\newcommand{\obj}{\textsc{obj}}
+\newcommand{\obl}{\textsc{obl}}
+
+\newcommand{\gap}{---}
+	
+\newcommand{\sense}[2]{\alph{senses}. #1 \textit{#2}\addtocounter{senses}{1}}
