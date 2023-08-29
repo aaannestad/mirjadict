@@ -77,7 +77,7 @@ def writeentry(entry,derived,indentnum):
         writeline(r'\begin{derivlemma}{'+entry['form']+r'}{'+entry['class']+r'}{'+entry['tone']+r'}')
         indentnum += 1
     if 'etym' in entry:
-        writeline(r'\etym{'+entry['etym']['derived-from']['form']+r'}')
+        writeline(r'\etym{'+entry['etym']['derived-from']['form']+r'}{'+entry['etym']['relation']+r'}')
     if entry['class']=='v': # for verbs with patterns
         for item in entry['def']:
             if 'pattern' in item:

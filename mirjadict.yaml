@@ -92,7 +92,7 @@
     class: n
     etym: 
       derived-from: *mir
-      relation: tool
+      relation: tool nmlz
     def:
       - senses:
           - desc: language; a language
