@@ -2,9 +2,7 @@
 - &kata
     form: kata
     tone: H
-    class: V
-    etym:
-      derived-from:
+    class: v
     def:
       - pattern: SUBJ
         senses:
@@ -17,7 +15,7 @@
       - derived:
         - form: katassa
           tone: H
-          class: V
+          class: v
           #etym?
           def:
           - pattern: SUBJ
@@ -30,7 +28,7 @@
                 example: TBD
         - form: katami
           tone: HL
-          class: V
+          class: v
           #etym?
           def:
             - pattern: SUBJ OBJ
@@ -42,7 +40,7 @@
 - &sima
     form: sima
     tone: HL
-    class: V
+    class: v
     def:
       - pattern: SUBJ
         senses:
@@ -55,7 +53,7 @@
       - derived:
         - form: simassa
           tone: HL
-          class: V
+          class: v
           #etym?
           def:
           - pattern: SUBJ
@@ -71,7 +69,7 @@
 - &don
     form: don
     tone: L
-    class: V
+    class: v
     def:
       - pattern: SUBJ OBJ
         senses:
@@ -81,7 +79,7 @@
 - &mir
     form: mir
     tone: HL
-    class: V
+    class: v
     def:
       - pattern: SUBJ COMP
         senses:
@@ -91,7 +89,7 @@
 - &mirja
     form: mirja
     tone: HL
-    class: N
+    class: n
     etym: 
       derived-from: *mir
       relation: tool

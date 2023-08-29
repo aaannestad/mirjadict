@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.7.27)  27 AUG 2023 21:29
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.8.29)  29 AUG 2023 12:58
  restricted system commands enabled.
 **dictionary.tex
 (./dictionary.tex
@@ -58,6 +58,32 @@ luaotfload | db : Font names database loaded from /home/aaann/.texlive/texmf-var
 \belowcaptionskip=\skip49
 \bibindent=\dimen139
 ) (./preamble.tex
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count191
+\Gm@cntv=\count192
+\c@Gm@tempcnt=\count193
+\Gm@bindingoffset=\dimen140
+\Gm@wd@mp=\dimen141
+\Gm@odd@mp=\dimen142
+\Gm@even@mp=\dimen143
+\Gm@layoutwidth=\dimen144
+\Gm@layoutheight=\dimen145
+\Gm@layouthoffset=\dimen146
+\Gm@layoutvoffset=\dimen147
+\Gm@dimlist=\toks17
+)
 (/usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -65,7 +91,7 @@ Package: expl3 2023-02-22 L3 programming layer (loader)
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
 File: l3backend-luatex.def 2023-01-16 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count191
+\l__color_backend_stack_int=\count194
 \l__pdf_internal_box=\box51
 ))
 Package: xparse 2023-02-02 L3 Experimental document command parser
@@ -75,20 +101,20 @@ Lua module: fontspec 2022/01/15 2.8a Font selection for XeLaTeX and LuaLaTeX
 (/usr/share/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaT
 eX
-\l__fontspec_script_int=\count192
-\l__fontspec_language_int=\count193
-\l__fontspec_strnum_int=\count194
-\l__fontspec_tmp_int=\count195
-\l__fontspec_tmpa_int=\count196
-\l__fontspec_tmpb_int=\count197
-\l__fontspec_tmpc_int=\count198
-\l__fontspec_em_int=\count199
-\l__fontspec_emdef_int=\count266
-\l__fontspec_strong_int=\count267
-\l__fontspec_strongdef_int=\count268
-\l__fontspec_tmpa_dim=\dimen140
-\l__fontspec_tmpb_dim=\dimen141
-\l__fontspec_tmpc_dim=\dimen142
+\l__fontspec_script_int=\count195
+\l__fontspec_language_int=\count196
+\l__fontspec_strnum_int=\count197
+\l__fontspec_tmp_int=\count198
+\l__fontspec_tmpa_int=\count199
+\l__fontspec_tmpb_int=\count266
+\l__fontspec_tmpc_int=\count267
+\l__fontspec_em_int=\count268
+\l__fontspec_emdef_int=\count269
+\l__fontspec_strong_int=\count270
+\l__fontspec_strongdef_int=\count271
+\l__fontspec_tmpa_dim=\dimen148
+\l__fontspec_tmpb_dim=\dimen149
+\l__fontspec_tmpc_dim=\dimen150
 
 (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
@@ -131,23 +157,23 @@ g;+onum;"
 
 (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
-\c@tracingmulticols=\count269
+\c@tracingmulticols=\count272
 \mult@box=\box52
-\multicol@leftmargin=\dimen143
-\c@unbalance=\count270
-\c@collectmore=\count271
-\doublecol@number=\count272
-\multicoltolerance=\count273
-\multicolpretolerance=\count274
-\full@width=\dimen144
-\page@free=\dimen145
-\premulticols=\dimen146
-\postmulticols=\dimen147
+\multicol@leftmargin=\dimen151
+\c@unbalance=\count273
+\c@collectmore=\count274
+\doublecol@number=\count275
+\multicoltolerance=\count276
+\multicolpretolerance=\count277
+\full@width=\dimen152
+\page@free=\dimen153
+\premulticols=\dimen154
+\postmulticols=\dimen155
 \multicolsep=\skip50
 \multicolbaselineskip=\skip51
 \partial@page=\box53
 \last@line=\box54
-\maxbalancingoverflow=\dimen148
+\maxbalancingoverflow=\dimen156
 \mult@rightbox=\box55
 \mult@grightbox=\box56
 \mult@firstbox=\box57
@@ -188,18 +214,18 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \@tempa=\box92
 \@tempa=\box93
 \@tempa=\box94
-\c@minrows=\count275
-\c@columnbadness=\count276
-\c@finalcolumnbadness=\count277
-\last@try=\dimen149
-\multicolovershoot=\dimen150
-\multicolundershoot=\dimen151
+\c@minrows=\count278
+\c@columnbadness=\count279
+\c@finalcolumnbadness=\count280
+\last@try=\dimen157
+\multicolovershoot=\dimen158
+\multicolundershoot=\dimen159
 \mult@nat@firstbox=\box95
 \colbreak@box=\box96
-\mc@col@check@num=\count278
+\mc@col@check@num=\count281
 )
-\c@patterns=\count279
-\c@senses=\count280
+\c@patterns=\count282
+\c@senses=\count283
 ) (./dictionary.aux)
 \openout1 = dictionary.aux
 
@@ -225,6 +251,41 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
@@ -299,12 +360,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--35
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--46
+Underfull \hbox (badness 10000) in paragraph at lines 37--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--64
+Underfull \hbox (badness 10000) in paragraph at lines 49--65
 
  []
 
@@ -313,20 +374,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--64
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./dictionary.aux))
 
 Here is how much of LuaTeX's memory you used:
- 3012 strings out of 478285
+ 3644 strings out of 478285
  100000,1977958 words of node,token memory allocated
  434 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 51 glue_spec,
  5 attribute_list, 1 write nodes
-   avail lists: 1:1,2:553,3:88,4:15,5:310,6:16,7:1930,8:1,9:128,10:12,11:40
- 23221 multiletter control sequences out of 65536+600000
+   avail lists: 1:1,2:569,3:86,4:18,5:316,6:16,7:1992,8:1,9:122,10:15,11:40
+ 23814 multiletter control sequences out of 65536+600000
  43 fonts using 8144847 bytes
  77i,5n,100p,272b,220s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/truetype/public/junicode/Junicode-Italic.ttf></usr/
 share/texmf-dist/fonts/truetype/public/junicode/Junicode-Bold.ttf></usr/share/te
 xmf-dist/fonts/truetype/public/junicode/Junicode.ttf></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on dictionary.pdf (1 page, 60698 bytes).
+Output written on dictionary.pdf (1 page, 61256 bytes).
 
 PDF statistics: 33 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream

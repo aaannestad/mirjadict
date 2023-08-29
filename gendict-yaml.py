@@ -17,10 +17,13 @@ sortdict = sorted(dictlist, key = lambda x: x['form'])
 
 #replace placeholders in yaml file with real commands
 
+# with open('commandreplace.yaml','r') as replacefile:
+#     replacements = yaml.safe_load(replacefile)
+
 def findandreplace(d):
   
   def replace(s: str): #it'd be nice to define this list elsewhere
-    altereds = s.replace('SUBJ', r'\subj{}').replace('OBJ', r'\obj{}').replace('OBL', r'\obl{}')
+    altereds = s.replace('SUBJ', r'\subj{}').replace('OBJ', r'\obj{}').replace('OBL', r'\obl{}').replace('COMP', r'\comp{}')
     return altereds
 
   if isinstance(d, dict):
@@ -58,6 +61,7 @@ for letter in letterlist:
 #NEXTUP - handle derived-from!!
 
 def writeentry(entry,derived,indentnum):
+#pass in an entry object, a boolean for 'is this a derived form part of another form', and the current number of indents
 
     def writeline(line):
         output.write((indentnum*'  ')+line+'\n')
@@ -72,7 +76,9 @@ def writeentry(entry,derived,indentnum):
     else:
         writeline(r'\begin{derivlemma}{'+entry['form']+r'}{'+entry['class']+r'}{'+entry['tone']+r'}')
         indentnum += 1
-    if entry['class']=='V': # for verbs with patterns
+    if 'etym' in entry:
+        writeline(r'\etym{'+entry['etym']['derived-from']['form']+r'}')
+    if entry['class']=='v': # for verbs with patterns
         for item in entry['def']:
             if 'pattern' in item:
                 writeline(r'\begin{pattern}{'+item['pattern']+r'}')

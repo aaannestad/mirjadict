@@ -1,3 +1,5 @@
+\usepackage[margin=1in]{geometry}
+
 \usepackage{fontspec}
 \setmainfont[Numbers=OldStyle]{Junicode}
 
@@ -22,7 +24,7 @@
 	
 \newenvironment{pattern}[1]{%
 	\setcounter{senses}{1}%
-	\Roman{patterns}. #1%
+	(\roman{patterns}) #1%
 	}{%
 	\addtocounter{patterns}{1}%
 	}
@@ -37,7 +39,9 @@
 \newcommand{\subj}{\textsc{sbj}}
 \newcommand{\obj}{\textsc{obj}}
 \newcommand{\obl}{\textsc{obl}}
+\newcommand{\comp}{\textsc{comp}}
 
 \newcommand{\gap}{---}
 	
-\newcommand{\sense}[2]{\alph{senses}. #1 \textit{#2}\addtocounter{senses}{1}}
+\newcommand{\sense}[2]{(\alph{senses}) #1 \textit{#2}\addtocounter{senses}{1}}
+\newcommand{\etym}[1]{$\leftarrow$ \textbf{#1}}
