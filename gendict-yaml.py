@@ -86,7 +86,7 @@ def writeentry(entry,derived,indentnum):
                     writeline(r'\sense{'+sense['desc']+r'}{}')
 
     if derived == False:
-        if 'etym' in entry:
+        if 'etym' in entry: #TODO: compounds etc with more than one source lemma
             writeline(r'\begin{lemma}{'+entry['form']+r'}{'+entry['class']+r'}{'+entry['tone']+r'}{\etym{'+entry['etym']['derived-from']['form']+r'}{'+entry['etym']['relation']+r'}}')
         else:
           writeline(r'\begin{lemma}{'+entry['form']+r'}{'+entry['class']+r'}{'+entry['tone']+r'}{}')

@@ -15,7 +15,6 @@
         - form: katassa
           tone: H
           class: v
-          #etym?
           def:
           - senses:
               - desc: SUBJ is located; SUBJ is a train etc.
@@ -27,7 +26,6 @@
         - form: katami
           tone: HL
           class: v
-          #etym?
           def:
             - pattern: SUBJ OBJ
               senses:
@@ -45,14 +43,13 @@
           - desc: SUBJ drives a car or other wheeled vehicle one rides inside but cannot move freely inside
             example:
             extrans:
-          - desc: SUBJ drives OBJ, which is a car etc.
+          - desc: SUBJ drives OBJ; OBJ is a car etc.
             example:
             extrans:
       - derived:
         - form: simassa
           tone: HL
           class: v
-          #etym?
           def:
           - senses:
               - desc: SUBJ is located; SUBJ is a car etc.
@@ -64,7 +61,7 @@
         #TODO - word for 'car moves'
 
 - &don
-    form: don
+    form: don-
     tone: L
     class: v
     def:
@@ -74,7 +71,7 @@
             extrans:
 
 - &mir
-    form: mir
+    form: mir-
     tone: HL
     class: v
     def:
@@ -98,3 +95,129 @@
           - desc: Mirja, the Mirja language
             example:
             extrans:
+
+- &su
+    form: su
+    tone: H
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ walks; SUBJ is a human
+            example:
+            extrans:
+
+- &xagu
+    form: xagu
+    tone: HL
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ goes bad, SUBJ rots
+            example:
+            extrans:
+      - derived:
+        - form: xaguv-
+          tone: HL
+          class: v
+          def:
+          - senses:
+              - desc: SUBJ ferments OBJ
+                example:
+                extrans:
+
+#xave; needs handling of compound words
+
+- &ryky
+    form: ryky
+    tone: L
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ is located; SUBJ is a book or other bound stack of paper or similar thin sheets
+            example:
+            extrans:
+          - desc: SUBJ moves; SUBJ is a book etc.
+            example:
+            extrans:
+          - desc: OBL possesses OBJ; OBJ is a book etc.
+            example:
+            extrans:
+      - derived:
+        - form: rykyva
+          tone: L
+          class: v
+          def:
+          - senses:
+              - desc: SUBJ moves or places OBJ; OBJ is a book etc
+                example:
+                extrans:
+
+- &ussa
+    form: ussa
+    tone: H
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ moves; SUBJ is a leaf or other small thin and flat light object
+            example:
+            extrans:
+          - desc: SUBJ is located; SUBJ is a leaf etc.
+            example:
+            extrans:
+          - desc: OBL possesses OBJ; OBJ is a leaf etc.
+            example:
+            extrans:
+      - derived:
+        - form: ussava
+          tone: H
+          class: v
+          def:
+          - senses:
+              - desc: SUBJ moves or places OBJ; OBJ is a leaf etc
+                example:
+                extrans:
+
+- &taeke
+    form: taeke
+    tone: HL
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ is boiling
+            example:
+            extrans:
+      - derived:
+        - form: taekeva
+          tone: L
+          class: v
+          def:
+          - senses:
+              - desc: SUBJ causes OBJ to boil
+                example:
+                extrans:
+
+
+- &xalhhe
+    form: xalhhe
+    tone: L
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ flows; SUBJ is a liquid
+            example:
+            extrans:
+          - desc: SUBJ pours or pushes OBJ; OBJ is a liquid
+            example:
+            extrans:
+          - desc: OBL possesses an uncontained mass of OBJ; OBJ is a liquid
+            example:
+            extrans:
+      - derived:
+        - form: xalhhessa
+          tone: L
+          class: v
+          def:
+          - senses:
+              - desc: SUBJ is located; SUBJ is an uncontained mass of liquid
+                example:
+                extrans:
