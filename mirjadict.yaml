@@ -109,10 +109,13 @@
 - &xagu
     form: xagu
     tone: HL
-    class: v
+    class: vs
     def:
       - senses:
-          - desc: SUBJ goes bad, SUBJ rots
+          - desc: SUBJ has gone bad, SUBJ is rotten
+            example:
+            extrans:
+          - desc: SUBJ has passed some date or time beyond which it is unusable
             example:
             extrans:
       - derived:
@@ -180,7 +183,7 @@
 - &taeke
     form: taeke
     tone: HL
-    class: v
+    class: vs
     def:
       - senses:
           - desc: SUBJ is boiling
@@ -188,7 +191,7 @@
             extrans:
       - derived:
         - form: taekeva
-          tone: L
+          tone: HL
           class: v
           def:
           - senses:
