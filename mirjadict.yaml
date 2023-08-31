@@ -4,28 +4,28 @@
     tone: H
     class: v
     def:
-      - pattern: SUBJ
-        senses:
+      - senses:
           - desc: SUBJ takes a train or other large, articulated, guided vehicle as transport
-            example: TBD
-      - pattern: SUBJ OBJ
-        senses:
+            example:
+            extrans:
+      - senses:
           - desc: SUBJ takes OBJ as transport; OBJ is a train etc.
-            example: TBD
+            example:
+            extrans:
       - derived:
         - form: katassa
           tone: H
           class: v
           #etym?
           def:
-          - pattern: SUBJ
-            senses:
+          - senses:
               - desc: SUBJ is located; SUBJ is a train etc.
-                example: TBD
-          - pattern: OBL OBJ
-            senses:
+                example:
+                extrans:
+          - senses:
               - desc: OBL possesses OBJ; OBJ is a train etc.
-                example: TBD
+                example:
+                extrans:
         - form: katami
           tone: HL
           class: v
@@ -34,7 +34,8 @@
             - pattern: SUBJ OBJ
               senses:
                 - desc: SUBJ drives or controls OBJ; OBJ is a train etc.
-                  example: TBD
+                  example:
+                  extrans:
           # TODO - word for 'train moves'
 
 - &sima
@@ -42,28 +43,28 @@
     tone: HL
     class: v
     def:
-      - pattern: SUBJ
-        senses:
+      - senses:
           - desc: SUBJ drives a car or other wheeled vehicle one rides inside but cannot move freely inside
-            example: TBD
-      - pattern: SUBJ OBJ
-        senses:
+            example:
+            extrans:
+      - senses:
           - desc: SUBJ drives OBJ, which is a car etc.
-            example: TBD
+            example:
+            extrans:
       - derived:
         - form: simassa
           tone: HL
           class: v
           #etym?
           def:
-          - pattern: SUBJ
-            senses:
+          - senses:
               - desc: SUBJ is located; SUBJ is a car etc.
-                example: TBD
-          - pattern: OBL OBJ
-            senses:
+                example:
+                extrans:
+          - senses:
               - desc: OBL possesses OBJ; OBJ is a car etc.
-                example: TBD
+                example:
+                extrans:
         #TODO - word for 'car moves'
 
 - &don
@@ -71,20 +72,20 @@
     tone: L
     class: v
     def:
-      - pattern: SUBJ OBJ
-        senses:
+      - senses:
           - desc: SUBJ drinks OBJ
-            example: TBD
+            example:
+            extrans:
 
 - &mir
     form: mir
     tone: HL
     class: v
     def:
-      - pattern: SUBJ COMP
-        senses:
+      - senses:
           - desc: SUBJ says COMP
-            example: TBD
+            example:
+            extrans:
 
 - &mirja
     form: mirja
@@ -96,6 +97,8 @@
     def:
       - senses:
           - desc: language; a language
-            example: TBD
+            example:
+            extrans:
           - desc: Mirja, the Mirja language
-            example: TBD
+            example:
+            extrans:

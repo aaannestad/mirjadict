@@ -63,35 +63,33 @@ for letter in letterlist:
 def writeentry(entry,derived,indentnum):
 #pass in an entry object, a boolean for 'is this a derived form part of another form', and the current number of indents
 
-    def writeline(line):
+    def writeline(line): #pass a line of text; this makes it its own properly indented full line in the TeX file
         output.write((indentnum*'  ')+line+'\n')
 
-    def writesenses(senses):
+    def writesenses(senses):    #TODO: handle example translations; expand to allow multiple examples per sense
         for sense in senses:
-            writeline(r'\sense{'+sense['desc']+r'}{'+sense['example']+r'}')
-    
+            if type(sense['example']) == str:
+              writeline(r'\sense{'+sense['desc']+r'}{'+sense['example']+r'}')
+            else:
+                writeline(r'\sense{'+sense['desc']+r'}{}')
+
     if derived == False:
         writeline(r'\begin{lemma}{'+entry['form']+r'}{'+entry['class']+r'}{'+entry['tone']+r'}')
         indentnum += 1
     else:
         writeline(r'\begin{derivlemma}{'+entry['form']+r'}{'+entry['class']+r'}{'+entry['tone']+r'}')
         indentnum += 1
+
     if 'etym' in entry:
         writeline(r'\etym{'+entry['etym']['derived-from']['form']+r'}{'+entry['etym']['relation']+r'}')
-    if entry['class']=='v': # for verbs with patterns
-        for item in entry['def']:
-            if 'pattern' in item:
-                writeline(r'\begin{pattern}{'+item['pattern']+r'}')
-                indentnum += 1
-                writesenses(item['senses'])
-                indentnum -= 1               
-                writeline(r'\end{pattern}')
-            if 'derived' in item:
-                for lemma in item['derived']:
-                    writeentry(lemma,True,indentnum)
-    else: #nouns etc that have no argument structure pattern
-        for item in entry['def']:
+        
+    for item in entry['def']:
+        if 'derived' in item:
+            for lemma in item['derived']:
+                writeentry(lemma,True,indentnum)
+        else:
             writesenses(item['senses'])
+
     if derived == False:
         indentnum -= 1
         writeline(r'\end{lemma}')

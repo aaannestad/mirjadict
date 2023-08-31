@@ -5,7 +5,6 @@
 
 \usepackage{multicol}
 
-\newcounter{patterns}
 \newcounter{senses}
 
 \newenvironment{lettergroup}[1]{
@@ -16,21 +15,14 @@
 	}
 	
 \newenvironment{lemma}[3]{%
-	\setcounter{patterns}{1} \setcounter{senses}{1}%
+	\setcounter{senses}{1}%
 	\noindent \textbf{#1}	 \textit{#2}, #3% HANGING INDENT
 	}{
 	\\
 	}
 	
-\newenvironment{pattern}[1]{%
-	\setcounter{senses}{1}%
-	(\roman{patterns}) #1%
-	}{%
-	\addtocounter{patterns}{1}%
-	}
-	
 \newenvironment{derivlemma}[3]{%
-	\setcounter{patterns}{1} \setcounter{senses}{1}%
+	\setcounter{senses}{1}%
 	\\
 	$\rightarrow$ \textbf{#1} \textit{#2}, #3
 	}{%
