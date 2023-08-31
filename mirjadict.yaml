@@ -8,7 +8,6 @@
           - desc: SUBJ takes a train or other large, articulated, guided vehicle as transport
             example:
             extrans:
-      - senses:
           - desc: SUBJ takes OBJ as transport; OBJ is a train etc.
             example:
             extrans:
@@ -22,7 +21,6 @@
               - desc: SUBJ is located; SUBJ is a train etc.
                 example:
                 extrans:
-          - senses:
               - desc: OBL possesses OBJ; OBJ is a train etc.
                 example:
                 extrans:
@@ -47,7 +45,6 @@
           - desc: SUBJ drives a car or other wheeled vehicle one rides inside but cannot move freely inside
             example:
             extrans:
-      - senses:
           - desc: SUBJ drives OBJ, which is a car etc.
             example:
             extrans:
@@ -61,7 +58,6 @@
               - desc: SUBJ is located; SUBJ is a car etc.
                 example:
                 extrans:
-          - senses:
               - desc: OBL possesses OBJ; OBJ is a car etc.
                 example:
                 extrans:

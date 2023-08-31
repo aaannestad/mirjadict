@@ -58,8 +58,6 @@ for letter in letterlist:
 
 #actually do the things
 
-#NEXTUP - handle derived-from!!
-
 def writeentry(entry,derived,indentnum):
 #pass in an entry object, a boolean for 'is this a derived form part of another form', and the current number of indents
 
@@ -67,22 +65,36 @@ def writeentry(entry,derived,indentnum):
         output.write((indentnum*'  ')+line+'\n')
 
     def writesenses(senses):    #TODO: handle example translations; expand to allow multiple examples per sense
+        #check how many senses, behave differently if only one
+        sensecount = 0
         for sense in senses:
-            if type(sense['example']) == str:
-              writeline(r'\sense{'+sense['desc']+r'}{'+sense['example']+r'}')
-            else:
-                writeline(r'\sense{'+sense['desc']+r'}{}')
+            sensecount += 1
+            #print(sense)
+            #print(sensecount)
+
+        if sensecount == 1:
+            for sense in senses:
+                if type(sense['example']) == str:
+                  writeline(r'\onesense{'+sense['desc']+r'}{'+sense['example']+r'}')
+                else:
+                    writeline(r'\onesense{'+sense['desc']+r'}{}')
+        elif sensecount > 1:
+            for sense in senses:
+                if type(sense['example']) == str:
+                    writeline(r'\sense{'+sense['desc']+r'}{'+sense['example']+r'}')
+                else:
+                    writeline(r'\sense{'+sense['desc']+r'}{}')
 
     if derived == False:
-        writeline(r'\begin{lemma}{'+entry['form']+r'}{'+entry['class']+r'}{'+entry['tone']+r'}')
+        if 'etym' in entry:
+            writeline(r'\begin{lemma}{'+entry['form']+r'}{'+entry['class']+r'}{'+entry['tone']+r'}{\etym{'+entry['etym']['derived-from']['form']+r'}{'+entry['etym']['relation']+r'}}')
+        else:
+          writeline(r'\begin{lemma}{'+entry['form']+r'}{'+entry['class']+r'}{'+entry['tone']+r'}{}')
         indentnum += 1
     else:
         writeline(r'\begin{derivlemma}{'+entry['form']+r'}{'+entry['class']+r'}{'+entry['tone']+r'}')
         indentnum += 1
 
-    if 'etym' in entry:
-        writeline(r'\etym{'+entry['etym']['derived-from']['form']+r'}{'+entry['etym']['relation']+r'}')
-        
     for item in entry['def']:
         if 'derived' in item:
             for lemma in item['derived']:
