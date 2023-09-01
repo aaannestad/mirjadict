@@ -58,6 +58,17 @@
               - desc: OBL possesses OBJ; OBJ is a car etc.
                 example:
                 extrans:
+        - form: simaane
+          tone: HL
+          class: v
+          def:
+          - senses:
+              - desc: SUBJ takes a car etc. driven by someone other than SUBJ as transport
+                example:
+                extrans:
+              - desc: SUBJ takes OBJ as transport; OBJ is a car etc. driven by someone other than SUBJ
+                example:
+                extrans:
         #TODO - word for 'car moves'
 
 - &don
@@ -76,7 +87,7 @@
     class: v
     def:
       - senses:
-          - desc: SUBJ says COMP
+          - desc: SUBJ says COMP orally/aloud
             example:
             extrans:
 
@@ -199,7 +210,6 @@
                 example:
                 extrans:
 
-
 - &xalhhe
     form: xalhhe
     tone: L
@@ -224,3 +234,584 @@
               - desc: SUBJ is located; SUBJ is an uncontained mass of liquid
                 example:
                 extrans:
+
+- &syyte
+    form: syyte
+    tone: HL
+    class: vs
+    def:
+      - senses:
+          - desc: SUBJ is waiting
+            example:
+            extrans:
+          - desc: SUBJ is waiting for OBL
+            example:
+            extrans:
+      - derived:
+        - form: syyteva
+          tone: HL
+          class: v
+          def:
+          - senses:
+              - desc: SUBJ pauses OBJ, SUBJ sets OBJ aside for the moment
+                example:
+                extrans:
+
+- &jeh
+    form: jeh-
+    tone: H
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ sends a digital message (usually text)
+            example:
+            extrans:
+          - desc: SUBJ sends OBJ as a digital message
+            example:
+            extrans:
+          - desc: SUBJ says COMP via a digital text channel
+            example:
+            extrans:
+#NEEDS NON-PHYSICAL DERIVATIONAL FORMS
+
+- &huru
+    form: huru
+    tone: LH
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ drives a vehicle such as a bicycle or motorcycle, which is ridden by setting oneself across the vehicle with one's legs on either side
+            example:
+            extrans:
+          - desc: SUBJ drives OBJ; OBJ is a bicycle etc.
+            example:
+            extrans:
+      - derived:
+        - form: hurussa
+          tone: LH
+          class: v
+          def:
+          - senses:
+              - desc: SUBJ is located; SUBJ is a bicycle etc.
+                example:
+                extrans:
+              - desc: OBL possesses OBJ; OBJ is a bicycle etc.
+                example:
+                extrans:
+        - form: huruune
+          tone: LH
+          class: v
+          def:
+          - senses:
+              - desc: SUBJ takes a bicycle etc. driven by someone other than SUBJ as transport
+                example:
+                extrans:
+              - desc: SUBJ takes OBJ as transport; OBJ is a bicycle etc. driven by someone other than SUBJ
+                example:
+                extrans:
+
+- &adi
+    form: adi
+    tone: HL
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ takes as transport a vehicle such as a boat or plane that is large enough to move around somewhat freely inside
+            example:
+            extrans:
+      - derived:
+        - form: adissa
+          tone: HL
+          class: v
+          def:
+          - senses:
+              - desc: SUBJ is located; SUBJ is a boat etc.
+                example:
+                extrans:
+              - desc: OBL possesses OBJ; OBJ is a boat etc.
+                example:
+                extrans:
+
+- &okko
+    form: okko
+    tone: H
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ walks or runs; SUBJ is an animal that moves as horses do
+            example:
+            extrans:
+    #MORE
+
+- &eru
+    form: eru
+    tone: HL
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ passively shows or demonstrates OBJ
+            example:
+            extrans:
+          - desc: SUBJ shows or demonstrates that COMP is true / the case
+            example:
+            extrans:
+      - derived:
+          - form: eruv-
+            tone: HL
+            class: v
+            def:
+            - senses:
+                - desc: SUBJ actively points out OBJ to OBL, SUBJ takes OBL's attention and directs it to OBJ
+                  example:
+                  extrans:
+
+- &naja
+    form: naja
+    tone: L
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ is located; SUBJ is a large stiff flat object like a countertop or panel
+            example:
+            extrans:
+          - desc: SUBJ moves; SUBJ is a large stiff flat object
+            example:
+            extrans:
+          - desc: SUBJ moves OBJ; OBJ is a large stiff flat object
+            example:
+            extrans:
+          - desc: OBJ possesses OBJ; OBJ is a large stiff flat object
+            example:
+            extrans:
+
+- &aeka
+    form: aeka
+    tone: HL
+    class: v
+    def:
+      - senses:
+          - desc: time passes
+            example:  #aekajja 'later on'...
+            extrans:
+          - desc: SUBJ passes; SUBJ is one or more intervals of time
+            example:
+            extrans:
+
+- &e
+    form: e
+    tone: H
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ eats OBJ #MORE
+            example:
+            extrans:
+
+- &va
+    form: va
+    tone: irregular (H, but L before H suffixes)
+    class: prov
+    def:
+      - senses:
+          - desc: SUBJ does the aforementioned action, SUBJ does it
+            example:
+            extrans:
+          - desc: SUBJ does OBJ; OBJ is an action of some kind
+            example:
+            extrans:
+      - derived:
+        - form: v-
+          tone: ∅
+          class: deriv suff
+          def:
+          - senses:
+              - desc: derives verbs for actions performed intentionally by the subject or state changes brought about by the subject
+                example:
+                extrans:
+        - form: va
+          tone: ∅
+          class: deriv suff
+          def:
+          - senses:
+              - desc: derives verbs of causing motion from some location verbs
+                example:
+                extrans:
+
+- &une
+    form: une
+    tone: L
+    class: vs
+    def:
+      - senses:
+          - desc: SUBJ is ill, SUBJ is feeling unwell
+            example:
+            extrans:
+    #MORE
+
+- &hat
+    form: hat-
+    tone: HL
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ hits or smacks OBJ
+            example:
+            extrans:
+
+- &ado
+    form: ado
+    tone: L
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ gives COMP as a name to OBJ
+            example:
+            extrans:
+
+- &adoja
+    form: adoja
+    tone: HL
+    class: n
+    etym:
+      derived-from: *ado
+      relation: tool nmlz
+    def:
+      - senses:
+          - desc: a name, esp.\ of people
+            example:
+            extrans:
+
+- &sar
+    form: sar-
+    tone: H
+    class: v
+    def:
+      - senses:
+          - desc: OBJ is audible to OBL, OBL hears or can hear OBJ
+            example:
+            extrans:
+      - derived:
+          - form: sarav-
+            tone: H
+            class: v
+            def:
+              - senses:
+                  - desc: SUBJ listens to OBJ, SUBJ directs their attention to OBJ; OBJ is a noise or the source of a noise
+                    example:
+                    extrans:
+
+- &tyva
+    form: tyva
+    tone: H
+    class: vs
+    def:
+      - senses:
+          - desc: SUBJ remembers or can remember OBJ #TODO - make this more digital?
+            example:
+            extrans:
+      - derived:
+          - form: tyvav-
+            tone: H
+            class: v
+            def:
+              - senses:
+                  - desc: SUBJ causes OBL to remember OBJ, SUBJ reminds OBL of OBJ
+                    example:
+                    extrans:
+                  - desc: SUBJ intentionally recalls OBJ, SUBJ brings OBJ to mind
+                    example:
+                    extrans:
+
+- &hass
+    form: hass-
+    tone: LH
+    class: vs
+    def:
+      - senses:
+          - desc: it is raining, the weather is rainy
+            example:
+            extrans:
+
+- &ynna
+    form: ynna
+    tone: LH
+    class: vs
+    def:
+      - senses:
+          - desc: SUBJ supports OBL, SUBJ is a reason behind OBL
+            example:
+            extrans:
+          - desc: SUBJ is basic, SUBJ is fundamental
+            example:
+            extrans:
+
+- &gyrh
+    form: gyrh-
+    tone: L
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ mixes OBL into OBJ, SUBJ mixes OBJ with OBL
+            example: 
+            extrans:
+
+- &gyrhja
+    form: gyrhja
+    tone: L
+    class: n
+    etym:
+      derived-from: *gyrh
+      relation: tool nmlz
+    def:
+      - senses:
+          - desc: a mixing spoon or paddle
+            example:
+            extrans:
+
+
+- &sama
+    form: sama
+    tone: H
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ tells a story, SUBJ relates a narrative
+            example:
+            extrans:
+          - desc: SUBJ tells or relates OBJ; OBJ is a narrative of some kind
+            example:
+            extrans:
+          - desc: SUBJ relates how COMP happened, SUBJ depicts COMP
+            example:
+            extrans:
+
+- &dega
+    form: dega
+    tone: HL
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ wears OBJ; OBJ is a ring or other small cylindrical item worn by inserting a body part into
+            example:
+            extrans:
+
+- &rhaka
+    form: rhaka
+    tone: LH
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ orders OBL to perform OBJ/COMP
+            example:
+            extrans:
+          - desc: SUBJ is in authority over OBJ; with pfv., SUBJ gives an order to OBJ
+            example: #rhakata 'orders once' vs rhaka 'is in charge of'
+            extrans:
+
+- &rhakama
+    form: rhakama
+    tone: LH
+    class: n
+    etym:
+      derived-from: *rhaka
+      relation: agt nmlz
+    def:
+      - senses:
+          - desc: a commander, a lord, an authority figure with a right to give orders
+            example:  Lijeere GAPppa
+            extrans:  Lord of the Rings
+
+- &ulhu
+    form: ulhu
+    tone: HL
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ prepares OBJ; OBJ is a meal or completed food item
+            example:
+            extrans:
+          - desc: SUBJ prepares a meal etc.
+            example:
+            extrans:
+
+- &ulhuro
+    form: ulhuro
+    tone: HL
+    class: n
+    etym:
+      derived-from: *ulhu
+      relation: rslt nmlz
+    def:
+      - senses:
+          - desc: cooked food, finished meal product; esp.\ pejorative (`cooking was done, at least')
+            example:
+            extrans:
+
+- &maro
+    form: maro
+    tone: HL
+    class: vs
+    def:
+      - senses:
+          - desc: SUBJ is dead; SUBJ is a living being of some kind
+            example:
+            extrans:
+          - desc: SUBJ is fully nonfunctional and cannot even attempt to function, SUBJ is bricked; SUBJ is a mechanical or electronic device
+            example:
+            extrans:
+      - derived:
+          - form: marova
+            tone: HL
+            class: v
+            def:
+              - senses:
+                  - desc: SUBJ kills OBJ; OBJ is a living being etc.
+                    example:
+                    extrans:
+                  - desc: SUBJ breaks OBJ and renders it fully nonfunctional, especially by minimal or unexpected means; OBJ is a device etc.
+                    example:
+                    extrans:
+              - derived:
+                  - form: marovad-
+                    tone: HL
+                    class: v
+                    def:
+                      - senses:
+                          - desc: SUBJ accidentally renders OBJ nonfunctional; OBJ is a device etc.
+                            example:
+                            extrans:
+
+- &hila
+    form: hila
+    tone: H
+    class: vs
+    def:
+      - senses:
+          - desc: SUBJ is alive; SUBJ is a living being of some kind
+            example:
+            extrans:
+          - desc: SUBJ is at least somewhat properly functional, esp.\ when it had not been before; SUBJ is a mechanical or electronic device
+            example:
+            extrans:
+      - derived:
+          - form: hilava
+            tone: H
+            class: v
+            def:
+              - senses:
+                  - desc: SUBJ raises OBJ from the dead, esp.\ in a Christian sense; OBJ is (or was) a living being
+                    example:
+                    extrans:
+                  - desc: jokingly, SUBJ restores OBJ to functionality; OBJ is a device etc.
+                    example:
+                    extrans:
+
+- &dek
+    form: dek-
+    tone: LH
+    class: vs
+    def:
+      - senses:
+          - desc: SUBJ is standing; SUBJ is a human or other bipedal animal (or physical imitation of such)
+            example:
+            extrans:
+      - derived:
+          - form: dekk-
+            tone: LH
+            class: v
+            def:
+              - senses:
+                  - desc: SUBJ stands up; SUBJ is a human etc.
+                    example:
+                    extrans:
+          - form: dekv-
+            tone: LH
+            class: v
+            def:
+              - senses:
+                  - desc: SUBJ stands OBJ up; OBJ is a human etc.
+                    example:
+                    extrans:
+
+#dekaaka 'protect' < deka-eka 'stand in front of'
+
+- &sik
+    form: sik-
+    tone: H
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ cuts OBJ, SUBJ divides OBJ into pieces using a knife or similar tool
+            example:
+            extrans:
+
+- &sikja
+    form: sikja
+    tone: H
+    class: n
+    etym:
+      derived-from: *sik
+      relation: tool nmlz
+    def:
+      - senses:
+          - desc: with \lem{nirrhe}, a knife, esp.\ of kitchen use size #TODO - make this not LaTeX-specific
+            example:
+            extrans:
+          - desc: with \lem{urhu}, a sword or machete
+            example:
+            extrans:
+
+- &nirrhe
+    form: nirrhe
+    tone: H
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ is located; SUBJ is a non-mechanical tool small enough to be manipulated in one hand (e.g.\ a knife or trowel)
+            example:
+            extrans:
+          - desc: SUBJ moves OBJ; OBJ is a small tool etc.
+            example:
+            extrans:
+          - desc: SUBJ moves; SUBJ is a small tool etc.
+            example:
+            extrans:
+          - desc: OBL possesses OBJ; OBJ is a small tool etc.
+            example:
+            extrans:
+
+- &urhu
+    form: urhu
+    tone: L
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ is located; SUBJ is a non-mechanical tool large enough to require two hands to manipulate naturally (e.g.\ a shovel or broom)
+            example:
+            extrans:
+          - desc: SUBJ moves OBJ; OBJ is a large tool etc.
+            example:
+            extrans:
+          - desc: SUBJ moves; SUBJ is a large tool etc.
+            example:
+            extrans:
+          - desc: OBL possesses OBJ; OBJ is a large tool etc.
+            example:
+            extrans:
+
+- &tirha
+    form: tirha
+    tone: L
+    class: v
+    def:
+      - senses:
+          - desc: SUBJ is located; SUBJ is digital text data
+            example:
+            extrans:
+          - desc: OBL possesses OBJ; OBJ is digital text data
+            example:
+            extrans:
+          - desc: OBL knows OBJ/COMP; OBJ/COMP is a fact or data point
+            example:
+            extrans:
+        #TODO: SHARING DERIVATIONS

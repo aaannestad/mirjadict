@@ -23,7 +23,7 @@ sortdict = sorted(dictlist, key = lambda x: x['form'])
 def findandreplace(d):
   
   def replace(s: str): #it'd be nice to define this list elsewhere
-    altereds = s.replace('SUBJ', r'\subj{}').replace('OBJ', r'\obj{}').replace('OBL', r'\obl{}').replace('COMP', r'\comp{}')
+    altereds = s.replace('SUBJ', r'\subj{}').replace('OBJ', r'\obj{}').replace('OBL', r'\obl{}').replace('COMP', r'\comp{}').replace('GAP', r'\gap{}')
     return altereds
 
   if isinstance(d, dict):
