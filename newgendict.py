@@ -60,5 +60,7 @@ for letter in letterlist:
         if initletter == letter:
             letterdict[letter].append(entry)
 
+#actually do the things
+
 for item in letterdict:
     print(item)
