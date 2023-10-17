@@ -1,0 +1,26 @@
+---
+- &kata
+  form: kata
+  tone: H
+  class: v
+  senses:
+    -
+      def: SUBJ takes a train or other large, articulated, guided vehicle as transport
+      ex: nho katassallhakuty
+    -
+      def: SUBJ takes OBJ as transport; OBJ is a train etc.
+  derivs:
+    - form: katassa
+      tone: H
+      class: v
+      senses:
+        -
+          def: SUBJ is located; SUBJ is a train etc
+
+- &don
+  form: don-
+  tone: L
+  class: v
+  senses:
+    -
+      def: SUBJ drinks OBJ

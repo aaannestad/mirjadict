@@ -1,0 +1,21 @@
+Alright, doing it better this time.
+
+Dictionary YAML format:
+
+- lemma link
+	form:
+	tone:
+	class:
+	etym:
+		relation: 
+		- source lemma 1
+		- source lemma 2
+	senses:
+		- 
+			def:
+			ex:
+		-
+			def:
+			ex:
+	derivs:
+		[repeat lemma structure]
