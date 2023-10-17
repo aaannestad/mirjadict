@@ -42,5 +42,23 @@ def findandreplace(d, rlist):
 
 findandreplace(sortdict, replacelist)
 
-for item in sortdict:
-    print(item['form'])
+#get a list of letters for heading letter sections
+
+letterlist = []
+
+for entry in sortdict:
+    initletter = entry['form'][0]
+    if initletter not in letterlist:
+        letterlist.append(initletter)
+
+letterdict = {} #broken out dictionary grouped by letter headers
+
+for letter in letterlist:
+    letterdict[letter] = []
+    for entry in sortdict: #note that this assumes sortdict is sorted and does not further sort
+        initletter = entry['form'][0]
+        if initletter == letter:
+            letterdict[letter].append(entry)
+
+for item in letterdict:
+    print(item)
