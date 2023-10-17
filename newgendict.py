@@ -11,20 +11,36 @@ with open('commandreplace.yaml') as replacefile:
 
 teststring = 'OBJ, thing, other thing, SUBJ'
 
-def replaceone(string, replacesource, replacetarget):
-    altereds = string.replace(replacesource, replacetarget)
-    return altereds
-
-def replaceall(string, replacedict):
-    altereds = string
-    for input, output in replacedict.items():
-        altereds = altereds.replace(input, output)
-    print(altereds)
-
-replaceall(teststring, replacelist)
-
 #sort dictionary
 sortdict = sorted(dictlist, key = lambda x: x['form'])
+
+#find and replace defined strings with LaTeX commands; mapping is found in commandreplace.yaml
+def findandreplace(d):
+
+    def replaceall(string, replacedict):
+
+        def replaceone(string, replacesource, replacetarget):
+            altereds = string.replace(replacesource, replacetarget)
+            return altereds
+
+        altereds = string
+        for input, output in replacedict.items():
+            altereds = altereds.replace(input, output)
+        return altereds
+    
+    if isinstance(d, dict):
+        kvps = d.items()
+    else:
+        assert isinstance(d, list)
+        kvps = enumerate(d)
+
+    for k, v in kvps:
+        if isinstance(v, str):
+            d[k] = replaceall(v)
+        elif isinstance(v, dict) or isinstance(v, list):
+            findandreplace(v)
+
+findandreplace(sortdict)
 
 for item in sortdict:
     print(item['form'])
