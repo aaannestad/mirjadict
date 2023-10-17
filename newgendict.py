@@ -2,7 +2,7 @@ import yaml
 from operator import getitem
 
 #open yaml file
-with open('newdict.yaml') as dictfile:
+with open('newdict.yaml') as dictfile: #rename later
     dictlist = yaml.safe_load(dictfile)
 
 #open replacement file
@@ -24,8 +24,8 @@ def findandreplace(d, rlist):
             return altereds
 
         altereds = string
-        for input, output in replacedict.items():
-            altereds = altereds.replace(input, output)
+        for i, o in replacedict.items():
+            altereds = altereds.replace(i, o)
         return altereds
     
     if isinstance(d, dict):
@@ -62,5 +62,12 @@ for letter in letterlist:
 
 #actually do the things
 
-for item in letterdict:
-    print(item)
+#def writeentry(stuff):
+
+def writeline(line, indentnum): #pass a line of text, makes it a real line in TeX with indents and a newline
+    output.write((indentnum*'  ')+line+'\n')
+
+for letter in letterdict:
+    print(letter)
+    for item in letterdict[letter]:
+        print(item)
