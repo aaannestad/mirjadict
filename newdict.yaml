@@ -3,24 +3,59 @@
   form: kata
   tone: H
   class: v
+  gloss: take a train
   senses:
-    -
-      def: SUBJ takes a train or other large, articulated, guided vehicle as transport
+    - def: SUBJ takes a train or other large, articulated, guided vehicle as transport
       ex: nho katassallhakuty
-    -
-      def: SUBJ takes OBJ as transport; OBJ is a train etc.
+    - def: SUBJ takes OBJ as transport; OBJ is a train etc.
   derivs:
     - form: katassa
       tone: H
       class: v
+      gloss: for a train to be there
       senses:
-        -
-          def: SUBJ is located; SUBJ is a train etc
+        - def: SUBJ is located; SUBJ is a train etc
 
 - &don
   form: don-
   tone: L
   class: v
+  gloss: drink
   senses:
-    -
-      def: SUBJ drinks OBJ
+    - def: SUBJ drinks OBJ
+
+- &xagu
+  form: xagu
+  tone: HL
+  class: vs
+  gloss: rot
+  senses:
+    - def: SUBJ has gone bad, SUBJ is rotten
+  derivs:
+    - &xaguv
+      form: xaguv-
+      tone: HL
+      class: v
+      gloss: ferment
+      senses:
+        - def: SUBJ ferments OBJ
+
+- &eno
+  form: eno
+  tone: HL
+  class: n
+  senses:
+    - def: tea leaf, tea leaves
+    - def: tea
+
+- &xave
+  form: xave
+  tone: HL
+  class: n
+  gloss: kombucha
+  etym:
+    relation: portmanteau
+    source: *xaguv
+    source: *eno
+  senses:
+    - def: kombucha

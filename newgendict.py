@@ -1,5 +1,5 @@
 import yaml
-from operator import getitem
+#from operator import getitem #why did I have this
 
 #open yaml file
 with open('newdict.yaml') as dictfile: #rename later
