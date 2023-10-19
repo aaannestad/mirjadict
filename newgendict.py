@@ -122,7 +122,7 @@ def writeentry(entry,isderived,indentnum):
 
     if 'derived' in entry:
         for item in entry['derived']:
-            writeentry(item, True, 0)
+            writeentry(item, True, indentnum)
 
     if isderived:
         writeline(texend('derivlemma'))
