@@ -16,7 +16,13 @@
       class: v
       gloss: for a train to be there
       senses:
-        - def: SUBJ is located; SUBJ is a train etc
+        - def: SUBJ is located; SUBJ is a train etc.
+    - form: katami
+      tone: HL
+      class: v
+      gloss: take a train
+      senses:
+        - def: SUBJ drives or controls OBJ; OBJ is a train etc.
 
 - &don
   form: don-

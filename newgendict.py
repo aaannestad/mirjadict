@@ -1,5 +1,4 @@
 import yaml
-#from operator import getitem #why did I have this
 
 #open yaml file
 with open('newdict.yaml') as dictfile: #rename later
@@ -9,7 +8,22 @@ with open('newdict.yaml') as dictfile: #rename later
 with open('commandreplace.yaml') as replacefile:
     replacelist = yaml.safe_load(replacefile)
 
-#TODO: on opening, check to see if all entries are valid, and identify invalid entries
+#TODO: Check if every entry has correct structure
+
+def checkEntry(entry, content, entryname):
+    try:
+        entry[content]
+    except:
+        print(f'No {content} in {entryname}')
+
+listtocheck=['form','tone','class','gloss']
+
+for item in dictlist:
+    for entry in listtocheck:
+        checkEntry(item, entry, item['form'])
+        if 'derived' in item:
+            for lemma in item['derived']:
+                checkEntry(lemma, 'gloss', lemma['form'])
 
 teststring = 'OBJ, thing, other thing, SUBJ'
 
