@@ -67,6 +67,13 @@ for letter in letterlist:
 def writeentry(entry,isderived,indentnum):
 #pass in an entry object, a boolean for 'is this a derived form', and the current number of indents
 
+    def texbegin(env):
+        return r'\begin{'+env+r'}'
+    def texend(env):
+        return r'\end{'+env+r'}'
+    def texcmd(cmd,cont):
+        return "\\"+cmd+'{'+cont+'}'
+
     def writeline(line): #pass a line of text, makes it a real line in TeX with indents and a newline
        print((indentnum*'  ')+line+'\n')
 
@@ -78,26 +85,21 @@ def writeentry(entry,isderived,indentnum):
             for sense in senses:
                 #if sense has example(s)
                 desc = sense['def']
-                writeline(r'\sense{'+desc+r'}')
+                writeline(texcmd('sense',desc))
         elif sensenum == 1:
             for sense in senses:
                 desc = sense['def']
-                writeline(r'\onesense{'+desc+r'}')
+                writeline(texcmd('onesense',desc))
 
-    def texbegin(env):
-        return r'\begin{'+env+r'}{'
-    def texend(env):
-        return r'\end{'+env+r'}'
 
     form = entry['form']
     tone = entry['tone']
     wclass = entry['class']
-    
-    #writeline(form+tone+wclass)
+    etymlist = ''    
 
     if 'etym' in entry: # handle list of source lemmas
         sourcenum = 0
-        etymlist = ''
+        etymlist = texbegin('etym')
         sourcelist = entry['etym']['sources']
         for lemma in sourcelist:
             sourcenum += 1
@@ -105,19 +107,27 @@ def writeentry(entry,isderived,indentnum):
             lemmaform = lemma['form']
             lemmagloss = lemma['gloss']
             if sourcenum > 1:
-                etymlist += (lemmaform + ' ' + lemmagloss + ' and ')
+                etymlist += (lemmaform + ' ' + lemmagloss + ' and ')#DO TEX COMMANDS; HANDLE RELATIONSHIP
             else:
                 etymlist += (lemmaform + ' ' + lemmagloss)
-            print(etymlist)
             sourcenum -= 1
+        etymlist += texend('etym')
 
-
+    if isderived:
+        writeline(texbegin('derivlemma')+'{'+form+'}{'+tone+'}{'+wclass+'}')
+    else:
+        writeline(texbegin('lemma')+'{'+form+'}{'+tone+'}{'+wclass+'}{'+etymlist+'}')
 
     writesenses(entry['senses'])
 
     if 'derived' in entry:
         for item in entry['derived']:
             writeentry(item, True, 0)
+
+    if isderived:
+        writeline(texend('derivlemma'))
+    else:
+        writeline(texend('lemma'))
 
 
 for letter in letterdict:
