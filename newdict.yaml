@@ -6,7 +6,9 @@
   gloss: take a train
   senses:
     - def: SUBJ takes a train or other large, articulated, guided vehicle as transport
-      ex: nho katassallhakuty
+      ex:
+        ex: nho katallhakuty
+        extrans: I took a train there
     - def: SUBJ takes OBJ as transport; OBJ is a train etc.
   derivs:
     - form: katassa

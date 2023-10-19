@@ -9,6 +9,8 @@ with open('newdict.yaml') as dictfile: #rename later
 with open('commandreplace.yaml') as replacefile:
     replacelist = yaml.safe_load(replacefile)
 
+#FUTURE WORK: on opening, check to see if all entries are valid, and identify invalid entries
+
 teststring = 'OBJ, thing, other thing, SUBJ'
 
 #sort dictionary
@@ -62,12 +64,20 @@ for letter in letterlist:
 
 #actually do the things
 
-#def writeentry(stuff):
+def writeentry(entry,isderived):
+#pass in an entry object, a boolean for 'is this a derived form', and the current number of indents
 
-def writeline(line, indentnum): #pass a line of text, makes it a real line in TeX with indents and a newline
-    output.write((indentnum*'  ')+line+'\n')
+    def writeline(line): #pass a line of text, makes it a real line in TeX with indents and a newline
+       print(line+'\n')
+
+    def writesenses(senses):
+        for sense in senses:
+            #if sense has example(s)
+            print(sense['def'])
+
+    writesenses(entry['senses'])
 
 for letter in letterdict:
     print(letter)
     for item in letterdict[letter]:
-        print(item)
+        writeentry(item,False)
