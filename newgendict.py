@@ -64,16 +64,30 @@ for letter in letterlist:
 
 #actually do the things
 
-def writeentry(entry,isderived):
+def writeentry(entry,isderived,indentnum):
 #pass in an entry object, a boolean for 'is this a derived form', and the current number of indents
 
     def writeline(line): #pass a line of text, makes it a real line in TeX with indents and a newline
-       print(line+'\n')
+       print((indentnum*'  ')+line+'\n')
 
     def writesenses(senses): #write the definitions and examples for all the senses in an entry
+        sensenum = 0
         for sense in senses:
-            #if sense has example(s)
-            print(sense['def'])
+            sensenum += 1
+        if sensenum > 1:
+            for sense in senses:
+                #if sense has example(s)
+                desc = sense['def']
+                writeline(r'\sense{'+desc+r'}')
+        elif sensenum == 1:
+            for sense in senses:
+                desc = sense['def']
+                writeline(r'\onesense{'+desc+r'}')
+
+    def texbegin(env):
+        return r'\begin{'+env+r'}{'
+    def texend(env):
+        return r'\end{'+env+r'}'
 
     form = entry['form']
     tone = entry['tone']
@@ -81,11 +95,11 @@ def writeentry(entry,isderived):
     
     #writeline(form+tone+wclass)
 
-    if 'etym' in entry:
+    if 'etym' in entry: # handle list of source lemmas
         sourcenum = 0
         etymlist = ''
         sourcelist = entry['etym']['sources']
-        for etym in sourcelist:
+        for lemma in sourcelist:
             sourcenum += 1
         for lemma in sourcelist:
             lemmaform = lemma['form']
@@ -99,14 +113,14 @@ def writeentry(entry,isderived):
 
 
 
-    # writesenses(entry['senses'])
+    writesenses(entry['senses'])
 
     if 'derived' in entry:
         for item in entry['derived']:
-            writeentry(item, True)
+            writeentry(item, True, 0)
 
 
 for letter in letterdict:
     print(letter)
     for item in letterdict[letter]:
-        writeentry(item,False)
+        writeentry(item,False,0)
