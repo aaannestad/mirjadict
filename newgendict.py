@@ -90,7 +90,7 @@ def writeentry(entry,isderived,indentnum):
             for sense in senses:
                 #if sense has example(s)
                 desc = sense['def']
-                writeline(texcmd('sense',desc)) #TODO: REWRITE TEX FORMAT TO HANDLE EXAMPLES BETTER
+                writeline(texcmd('sense',desc)) #TODO: HANDLE EXAMPLES (TeX is already able to take them)
         elif sensenum == 1:
             for sense in senses:
                 desc = sense['def']
@@ -114,7 +114,7 @@ def writeentry(entry,isderived,indentnum):
             lemmaform = lemma['form']
             lemmagloss = lemma['gloss']
             if sourcenum > 1:
-                etymlist += twotexcmd('etymlem',lemmaform,lemmagloss) + ' and ' #TODO: REWRITE TEX COMMANDS
+                etymlist += twotexcmd('etymlem',lemmaform,lemmagloss) + ' and ' 
             else:
                 etymlist += twotexcmd('etymlem',lemmaform,lemmagloss)
             sourcenum -= 1
@@ -140,9 +140,20 @@ def writeentry(entry,isderived,indentnum):
         indentnum -= 1
         writeline(texend('lemma'))
 
+preamble = r'''\documentclass{article}
+
+\\input{preamble.tex}
+
+\begin{document}
+'''
+end = r'\end{document}'
+
+print(preamble)
 
 for letter in letterdict:
     print(texbegin('lettergroup')+'{'+letter.upper()+'}'+'\n')
     for item in letterdict[letter]:
         writeentry(item,False,1)
     print(texend('lettergroup'))
+
+print(end)
