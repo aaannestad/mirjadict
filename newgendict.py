@@ -115,8 +115,10 @@ def writeentry(entry,isderived,indentnum):
 
     if isderived:
         writeline(texbegin('derivlemma')+'{'+form+'}{'+tone+'}{'+wclass+'}')
+        indentnum += 1
     else:
         writeline(texbegin('lemma')+'{'+form+'}{'+tone+'}{'+wclass+'}{'+etymlist+'}')
+        indentnum += 1
 
     writesenses(entry['senses'])
 
@@ -125,8 +127,10 @@ def writeentry(entry,isderived,indentnum):
             writeentry(item, True, indentnum)
 
     if isderived:
+        indentnum -= 1
         writeline(texend('derivlemma'))
     else:
+        indentnum -= 1
         writeline(texend('lemma'))
 
 
