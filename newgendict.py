@@ -79,12 +79,30 @@ def writeentry(entry,isderived):
     tone = entry['tone']
     wclass = entry['class']
     
-    writeline(form+tone+wclass)
+    #writeline(form+tone+wclass)
 
-    writesenses(entry['senses'])
+    if 'etym' in entry:
+        sourcenum = 0
+        etymlist = ''
+        sourcelist = entry['etym']['sources']
+        for etym in sourcelist:
+            sourcenum += 1
+        for lemma in sourcelist:
+            lemmaform = lemma['form']
+            lemmagloss = lemma['gloss']
+            if sourcenum > 1:
+                etymlist += (lemmaform + ' ' + lemmagloss + ' and ')
+            else:
+                etymlist += (lemmaform + ' ' + lemmagloss)
+            print(etymlist)
+            sourcenum -= 1
 
-    if 'derivs' in entry:
-        for item in entry['derivs']:
+
+
+    # writesenses(entry['senses'])
+
+    if 'derived' in entry:
+        for item in entry['derived']:
             writeentry(item, True)
 
 

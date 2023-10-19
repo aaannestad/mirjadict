@@ -10,7 +10,7 @@
         ex: nho katallhakuty
         extrans: I took a train there
     - def: SUBJ takes OBJ as transport; OBJ is a train etc.
-  derivs:
+  derived:
     - form: katassa
       tone: H
       class: v
@@ -33,7 +33,7 @@
   gloss: rot
   senses:
     - def: SUBJ has gone bad, SUBJ is rotten
-  derivs:
+  derived:
     - &xaguv
       form: xaguv-
       tone: HL
@@ -46,6 +46,7 @@
   form: eno
   tone: HL
   class: n
+  gloss: tea
   senses:
     - def: tea leaf, tea leaves
     - def: tea
@@ -57,7 +58,8 @@
   gloss: kombucha
   etym:
     relation: portmanteau
-    source: *xaguv
-    source: *eno
+    sources:
+    - *xaguv
+    - *eno
   senses:
     - def: kombucha
