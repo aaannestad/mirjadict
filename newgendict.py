@@ -64,15 +64,18 @@ for letter in letterlist:
 
 #actually do the things
 
+# TeX writing commands
+
+def texbegin(env):
+    return r'\begin{'+env+r'}'
+def texend(env):
+    return r'\end{'+env+r'}'
+def texcmd(cmd,cont):
+    return "\\"+cmd+'{'+cont+'}'
+
 def writeentry(entry,isderived,indentnum):
 #pass in an entry object, a boolean for 'is this a derived form', and the current number of indents
 
-    def texbegin(env):
-        return r'\begin{'+env+r'}'
-    def texend(env):
-        return r'\end{'+env+r'}'
-    def texcmd(cmd,cont):
-        return "\\"+cmd+'{'+cont+'}'
 
     def writeline(line): #pass a line of text, makes it a real line in TeX with indents and a newline
        print((indentnum*'  ')+line+'\n')
@@ -135,6 +138,7 @@ def writeentry(entry,isderived,indentnum):
 
 
 for letter in letterdict:
-    print(letter)
+    print(texbegin('lettergroup')+'{'+letter.upper()+'}')
     for item in letterdict[letter]:
-        writeentry(item,False,0)
+        writeentry(item,False,1)
+    print(texend('lettergroup'))
