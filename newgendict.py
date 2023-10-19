@@ -9,7 +9,7 @@ with open('newdict.yaml') as dictfile: #rename later
 with open('commandreplace.yaml') as replacefile:
     replacelist = yaml.safe_load(replacefile)
 
-#FUTURE WORK: on opening, check to see if all entries are valid, and identify invalid entries
+#TODO: on opening, check to see if all entries are valid, and identify invalid entries
 
 teststring = 'OBJ, thing, other thing, SUBJ'
 
@@ -72,6 +72,8 @@ def texend(env):
     return r'\end{'+env+r'}'
 def texcmd(cmd,cont):
     return "\\"+cmd+'{'+cont+'}'
+def twotexcmd(cmd,cont1,cont2):
+    return '\\'+cmd+'{'+cont1+'}{'+cont2+'}'
 
 def writeentry(entry,isderived,indentnum):
 #pass in an entry object, a boolean for 'is this a derived form', and the current number of indents
@@ -88,11 +90,11 @@ def writeentry(entry,isderived,indentnum):
             for sense in senses:
                 #if sense has example(s)
                 desc = sense['def']
-                writeline(texcmd('sense',desc))
+                writeline(texcmd('sense',desc)+'{}') #TODO: REWRITE TEX FORMAT TO HANDLE EXAMPLES BETTER
         elif sensenum == 1:
             for sense in senses:
                 desc = sense['def']
-                writeline(texcmd('onesense',desc))
+                writeline(texcmd('onesense',desc)+'{}')
 
 
     form = entry['form']
@@ -104,15 +106,17 @@ def writeentry(entry,isderived,indentnum):
         sourcenum = 0
         etymlist = texbegin('etym')
         sourcelist = entry['etym']['sources']
+        relation = entry['etym']['relation']
+        etymlist += texcmd('etymtype',relation) +' of '
         for lemma in sourcelist:
             sourcenum += 1
         for lemma in sourcelist:
             lemmaform = lemma['form']
             lemmagloss = lemma['gloss']
             if sourcenum > 1:
-                etymlist += (lemmaform + ' ' + lemmagloss + ' and ')#DO TEX COMMANDS; HANDLE RELATIONSHIP
+                etymlist += twotexcmd('etymlem',lemmaform,lemmagloss) + ' and ' #TODO: REWRITE TEX COMMANDS
             else:
-                etymlist += (lemmaform + ' ' + lemmagloss)
+                etymlist += twotexcmd('etymlem',lemmaform,lemmagloss)
             sourcenum -= 1
         etymlist += texend('etym')
 
@@ -138,7 +142,7 @@ def writeentry(entry,isderived,indentnum):
 
 
 for letter in letterdict:
-    print(texbegin('lettergroup')+'{'+letter.upper()+'}')
+    print(texbegin('lettergroup')+'{'+letter.upper()+'}'+'\n')
     for item in letterdict[letter]:
         writeentry(item,False,1)
     print(texend('lettergroup'))
