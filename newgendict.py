@@ -70,12 +70,23 @@ def writeentry(entry,isderived):
     def writeline(line): #pass a line of text, makes it a real line in TeX with indents and a newline
        print(line+'\n')
 
-    def writesenses(senses):
+    def writesenses(senses): #write the definitions and examples for all the senses in an entry
         for sense in senses:
             #if sense has example(s)
             print(sense['def'])
 
+    form = entry['form']
+    tone = entry['tone']
+    wclass = entry['class']
+    
+    writeline(form+tone+wclass)
+
     writesenses(entry['senses'])
+
+    if 'derivs' in entry:
+        for item in entry['derivs']:
+            writeentry(item, True)
+
 
 for letter in letterdict:
     print(letter)
