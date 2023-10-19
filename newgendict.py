@@ -80,7 +80,7 @@ def writeentry(entry,isderived,indentnum):
 
 
     def writeline(line): #pass a line of text, makes it a real line in TeX with indents and a newline
-       print((indentnum*'  ')+line+'\n')
+       output.write((indentnum*'  ')+line+'\n')
 
     def writesenses(senses): #write the definitions and examples for all the senses in an entry
         sensenum = 0
@@ -142,18 +142,20 @@ def writeentry(entry,isderived,indentnum):
 
 preamble = r'''\documentclass{article}
 
-\\input{preamble.tex}
+\input{preamble.tex}
 
 \begin{document}
 '''
-end = r'\end{document}'
+end = '\n'+r'\end{document}'
 
-print(preamble)
+with open('newdict.tex', 'w') as output:
 
-for letter in letterdict:
-    print(texbegin('lettergroup')+'{'+letter.upper()+'}'+'\n')
-    for item in letterdict[letter]:
-        writeentry(item,False,1)
-    print(texend('lettergroup'))
+    output.write(preamble)
 
-print(end)
+    for letter in letterdict:
+        output.write(texbegin('lettergroup')+'{'+letter.upper()+'}'+'\n')
+        for item in letterdict[letter]:
+            writeentry(item,False,1)
+        output.write(texend('lettergroup'))
+
+    output.write(end)

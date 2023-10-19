@@ -12,31 +12,38 @@
 	\begin{multicols}{2}%
 	}{%
 	\end{multicols}%
-	}
-	
-\newenvironment{lemma}[4]{%
+}
+
+\newenvironment{lemma}[4]{% input form, tone, class, etym
 	\setcounter{senses}{1}%
-	\noindent \textbf{#1}	 \textit{#2}, #3#4:% HANGING INDENT
-	}{
+	\noindent \textbf{#1}	 #2, \textit{#3}#4:% HANGING INDENT
+}{
 	\\
-	}
-	
-\newenvironment{derivlemma}[3]{%
+}
+
+\newenvironment{derivlemma}[3]{% input form, tone, class
 	\setcounter{senses}{1}%
 	\\
-	$\rightarrow$ \textbf{#1} \textit{#2}, #3:
-	}{%
-	}
-	
+	$\rightarrow$ \textbf{#1} #2, \textit{#3}:
+}{%
+}
+
+\newenvironment{etym}{ (}{)}
+
 \newcommand{\subj}{\textsc{sbj}}
 \newcommand{\obj}{\textsc{obj}}
 \newcommand{\obl}{\textsc{obl}}
 \newcommand{\comp}{\textsc{comp}}
 
 \newcommand{\gap}{---}
-	
-\newcommand{\sense}[2]{(\alph{senses}) #1 \textit{#2}\addtocounter{senses}{1}}
-\newcommand{\onesense}[2]{#1 \textit{#2}}
-\newcommand{\etym}[2]{ (\textit{#2} of \textbf{#1})}
 
-\newcommand{\lem}[1]{\textbf{#1}} %for citing other lemmas in dictionaries
+\newcommand{\sense}[1]{(\alph{senses})\nolinebreak[2] #1\addtocounter{senses}{1}}
+\newcommand{\onesense}[1]{#1}
+\newcommand{\example}[2]{\textit{#1} `#2'}
+%\newcommand{\etym}[2]{ (\textit{#2} of \textbf{#1})} %legacy for now
+
+\newcommand{\etymtype}[1]{\textit{#1}}
+\newcommand{\etymlem}[2]{\textbf{#1} `#2'}
+\newcommand{\lemmadef}[1]{`#1'}
+
+\newcommand{\lem}[1]{\textbf{#1}} %for citing other lemmas in dictionariesdictionaries
