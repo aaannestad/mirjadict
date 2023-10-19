@@ -90,7 +90,7 @@ def writeentry(entry,isderived,indentnum):
             for sense in senses:
                 #if sense has example(s)
                 desc = sense['def']
-                writeline(texcmd('sense',desc)+'{}') #TODO: REWRITE TEX FORMAT TO HANDLE EXAMPLES BETTER
+                writeline(texcmd('sense',desc)) #TODO: REWRITE TEX FORMAT TO HANDLE EXAMPLES BETTER
         elif sensenum == 1:
             for sense in senses:
                 desc = sense['def']
