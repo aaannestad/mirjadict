@@ -24,6 +24,29 @@
       senses:
         - def: SUBJ drives or controls OBJ; OBJ is a train etc.
 
+- &sima
+  form: sima
+  tone: HL
+  class: v
+  gloss: drive a car
+  senses:
+    - def: SUBJ drives a car or other wheeled vehicle one rides inside but cannot move freely inside
+  derived:
+    - form: simassa
+      tone: H
+      class: v
+      gloss: for a car to be there
+      senses:
+        - def: SUBJ is located; SUBJ is a car etc.
+    - form: simaane
+      tone: HL
+      class: v
+      gloss: ride in a car
+      senses:
+        - def: SUBJ takes a car etc. driven by someone other than SUBJ as transport
+        - def: SUBJ takes OBJ as transport; OBJ is a car etc driven by someone other than SUBJ
+    #TODO - word for 'car moves'
+
 - &don
   form: don-
   tone: L
@@ -31,6 +54,30 @@
   gloss: drink
   senses:
     - def: SUBJ drinks OBJ
+
+- &mir
+  form: mir-
+  tone: HL
+  class: v
+  gloss: speak
+  senses:
+    - def: SUBJ says COMP orally or audibly #TODO; serialising with eg sama
+  derived:
+    - form: mirja
+      tone: HL
+      class: n
+      gloss: language
+      senses:
+        - def: language, a language
+        - def: Mirja, the Mirja language
+
+- &su
+  form: su
+  tone: H
+  class: v
+  gloss: walk
+  senses:
+    - def: SUBJ walks; SUBJ is a human or other biped
 
 - &xagu
   form: xagu
@@ -69,3 +116,462 @@
     - *eno
   senses:
     - def: kombucha
+
+- &ryky
+  form: ryky
+  tone: L
+  class: vs
+  gloss: for a book to be there
+  senses:
+    - def: SUBJ is located; SUBJ is a book or other bound stack of paper or similar thin sheets
+    - def: SUBJ moves; SUBJ is a book etc.
+    - def: OBL possesses OBJ; OBJ is a book etc.
+  derived:
+    - form: rykyva
+      tone: L
+      class: v
+      gloss: move a book
+      senses:
+        - def: SUBJ moves or places OBJ; OBJ is a book etc.
+
+- &ussa
+  form: ussa
+  tone: H
+  class: v
+  gloss: for a leaf to move
+  senses:
+    - def: SUBJ moves; SUBJ is a leaf or other small thin and flat light object
+    - def: SUBJ is located; SUBJ is a leaf etc.
+    - def: OBL possesses OBJ; OBJ is a leaf etc.
+  derived:
+    - form: ussava
+      tone: H
+      class: v
+      gloss: move a leaf
+      senses:
+        - def: SUBJ moves or places OBJ; OBJ is a leaf etc.
+
+- &taeke
+  form: taeke
+  tone: HL
+  class: vs
+  gloss: boil
+  senses:
+    - def: SUBJ is boiling
+  derived:
+    - form: taekeva
+      tone: HL
+      class: v
+      gloss: make boil
+      senses:
+        - def: SUBJ causes OBJ to boil
+
+- &xalhhe
+  form: xalhhe
+  tone: L
+  class: v
+  gloss: flow
+  senses:
+    - def: SUBJ flows; SUBJ is a liquid
+    - def: SUBJ pours or pushes OBJ; OBJ is a liquid
+    - def: OBL possesses an uncontained mass of OBJ; OBJ is a liquid
+  derived:
+    - form: xalhhessa
+      tone: L
+      class: v
+      gloss: for a liquid to be there
+      senses:
+        - def: SUBJ is located; SUBJ is an uncontained mass of liquid
+
+- &syyte
+  form: syyte
+  tone: HL
+  class: vs
+  gloss: wait
+  senses:
+    - def: SUBJ is waiting
+    - def: SUBJ is waiting for OBL
+  derived:
+    - form: syyteva
+      tone: HL
+      class: v
+      gloss: pause
+      senses:
+        - def: SUBJ pauses OBJ, SUBJ sets OBJ aside for the moment
+
+- &jeh
+  form: jeh-
+  tone: H
+  class: v
+  gloss: send a message
+  senses:
+    - def: SUBJ sends a digital message (usually text) to OBL
+    - def: SUBJ sends OBJ as a digital message to OBL
+    - def: SUBJ says COMP via a digital text channel
+  #TODO - nonphysical derivational forms; serialising with eg sama
+
+- &huru
+  form: huru
+  tone: LH
+  class: v
+  gloss: ride a bike
+  senses:
+    - def: SUBJ drives a vehicle such as a bicycle or motorcycle, which is ridden by setting oneself across the vehicle with one's legs on either side
+    - def: SUBJ drives OBJ; OBJ is a bicycle etc.
+  derived:
+    - form: hurussa
+      tone: LH
+      class: v
+      gloss: for a bike to be there
+      senses:
+        - def: SUBJ is located; SUBJ is a bicycle etc.
+        - def: OBL possesses OBJ; OBJ is a bicycle etc.
+    - form: huruune
+      tone: LH
+      class: v
+      gloss: ride on a bike
+      senses:
+        - def: SUBJ takes a bicycle etc. driven by someone other than SUBJ as transport
+        - def: SUBJ takes OBJ as transport; OBJ is a bicycle etc. driven by someone other than SUBJ
+
+- &adi
+  form: adi
+  tone: HL
+  class: v
+  gloss: ride in
+  senses:
+    - def: SUBJ takes as transport a vehicle such as a boat or plane that is large enough to move around somewhat freely inside
+    - def: SUBJ takes OBJ as transport; OBJ is a boat etc.
+  derived:
+    - form: adissa
+      tone: HL
+      class: v
+      gloss: for a boat to be there
+      senses:
+        - def: SUBJ is located; SUBJ is a boat etc.
+        - def: OBL possesses OBJ; OBJ is a boat etc.
+    - form: adimi
+      tone: HL
+      class: v
+      gloss: drive a boat
+      senses:
+        - def: SUBJ drives or controls OBJ; OBJ is a boat etc.
+
+- &okko
+  form: okko
+  tone: H
+  class: v
+  gloss: for a horse to move
+  senses:
+    - def: SUBJ walks or runs; SUBJ is a horse or other similarly-moving animal
+
+- &eru
+  form: eru
+  tone: HL
+  class: v
+  gloss: show
+  senses:
+    - def: SUBJ passively shows or demonstrates OBJ
+    - def: SUBJ shows or demonstrates that COMP is true / is the case
+  derived:
+    - form: eruv-
+      tone: HL
+      class: v
+      gloss: point out
+      senses:
+        - def: SUBJ actively points out OBJ to OBL, SUBJ takes OBL's attention and directs it to OBJ
+    - form: eruja
+      tone: HL
+      class: v
+      gloss: display
+      senses:
+        - def: a window, a panel, a diagram, etc.; a defined area which contains a graphical display of information
+
+- &naja
+  form: naja
+  tone: L
+  class: v
+  gloss: for a panel to be there
+  senses:
+    - def: SUBJ is located; SUBJ is a large stiff flat object like a countertop or panel
+    - def: SUBJ moves; SUBJ is a large stiff flat object
+    - def: SUBJ moves OBJ; OBJ is a large stiff flat object
+    - def: OBL possesses OBJ; OBJ is a large stiff flat object
+      
+- &aeka
+  form: aeka
+  tone: HL
+  class: v
+  gloss: for time to pass
+  senses:
+    - def: time passes #aekajja 'later on'
+    - def: SUBJ passes; SUBJ is one or more intervals of time
+
+- &e
+  form: e
+  tone: H
+  class: v
+  gloss: eat
+  senses:
+    - def: SUBJ eats OBJ
+    - def: SUBJ eats the meal associated with OBJ; OBJ is a time of day
+
+- &va
+  form: va
+  tone: irregular (H, but often L before H suffixes)
+  class: prov
+  gloss: do
+  senses:
+    - def: SUBJ does the aforementioned action, SUBJ does it, SUBJ does that
+    - def: SUBJ does OBJ; OBJ is an action
+  derived:
+    - form: v-
+      tone: EMPTY
+      class: dsuff
+      gloss: INTENT
+      senses:
+        - def: derives verbs for actions performed intentionally by SUBJ, or state changes brought about by SUBJ
+    - form: va
+      tone: EMPTY
+      class: dsuff
+      gloss: MCAUS
+      senses:
+        - def: derives verbs of causing motion from some location verbs
+
+- &une
+  form: une
+  tone: L
+  class: vs
+  gloss: be unwell
+  senses:
+    - def: SUBJ is ill, SUBJ is feeling unwell
+
+- &hat
+  form: hat-
+  tone: HL
+  class: v
+  gloss: hit
+  senses:
+    - def: SUBJ hits or smacks OBJ
+
+- &ado
+  form: ado
+  tone: L
+  class: v
+  gloss: give a name
+  senses:
+    - def: SUBJ gives COMP as a name to OBJ
+  derived:
+    - form: adoja
+      tone: HL
+      class: n
+      gloss: name
+      senses:
+        - def: a name, esp.\ of people
+
+- &sar
+  form: sar-
+  tone: H
+  class: v
+  gloss: be audible
+  senses:
+    - def: OBJ is audible to OBL, OBL hears or can hear OBJ
+  derived:
+    - form: sarv-
+      tone: H
+      class: v
+      gloss: listen
+      senses:
+        - def: SUBJ listens to OBJ, SUBJ directs their attention to OBJ; OBJ is a noise or the source of a noise
+
+- &hass
+  form: hass-
+  tone: LH
+  class: vs
+  gloss: be raining
+  senses:
+    - def: it is raining, the weather is rainy
+
+- &ynna
+  form: ynna
+  tone: LH
+  class: vs
+  gloss: support
+  senses:
+    - def: SUBJ supports OBL
+    - def: SUBJ is a reason behind OBL, SUBJ explains OBL at least in part
+    - def: SUBJ is basic, SUBJ is fundamental
+
+- &gyrh
+  form: gyrh-
+  tone: L
+  class: v
+  gloss: mix
+  senses:
+    - def: SUBJ mixes OBL into OBJ, SUBJ mixes OBJ with OBL
+  derived:
+    - form: gyrhja
+      tone: L
+      class: n
+      gloss: mixer
+      senses:
+        - def: a mixing spoon or paddle
+        - def: a device for mixing, such as a stand mixer
+
+- &sama
+  form: sama
+  tone: H
+  class: v
+  gloss: tell a story
+  senses:
+    - def: SUBJ tells a story, SUBJ relates a narrative
+    - def: SUBJ tells or relates OBJ, OBJ is a narrative of some kind
+    - def: SUBJ relates how COMP happened, SUBJ depicts COMP
+
+- &dega
+  form: dega
+  tone: HL
+  class: v
+  gloss: wear a ring
+  senses: 
+    - def: SUBJ wears OBJ; OBJ is a ring or other small cylindrical item worn by inserting a body part into
+
+- &rhaka
+  form: rhaka
+  tone: LH
+  class: v
+  gloss: order
+  senses:
+    - def: SUBJ orders OBL to perform OBJ/COMP
+    - def: SUBJ is in authority over OBJ; with pfv., SUBJ gives an order to OBJ
+  derived:
+    - form: rhakama
+      tone: LH
+      class: n
+      gloss: leader
+      senses:
+        - def: a commander, a lord, an authority figure with the right to give orders
+          #TODO: EXAMPLE
+
+- &ulhu
+  form: ulhu
+  tone: HL
+  class: v
+  gloss: cook
+  senses:
+    - def: SUBJ prepares OBJ; OBJ is a meal or completed food item
+    - def: SUBJ prepares a meal etc.
+  derived:
+    - form: ulhuro
+      tone: HL
+      class: n
+      gloss: meal
+      senses:
+        - def: cooked food, finished meal product, esp.\ pejorative (`cooking was done, at least')
+
+- &maro
+  form: maro
+  tone: HL
+  class: vs
+  gloss: be dead
+  senses:
+    - def: SUBJ is dead; SUBJ is a living being of some kind
+    - def: SUBJ is fully nonfunctional and cannot even attempt to function, SUBJ is bricked; SUBJ is a mechanical or electronic device
+  derived:
+    - form: marov-
+      tone: HL
+      class: v
+      gloss: kill
+      senses:
+        - def: SUBJ kills OBJ; OBJ is a living being etc.
+        - def: SUBJ breaks OBJ and renders it fully nonfunctional, especially by minimal or unexpected means; OBJ is a device etc.
+      derived:
+        - form: marovad-
+          tone: HL
+          class: v
+          gloss: accidentally kill
+          senses:
+            - def: SUBJ accidentally renders OBJ nonfunctional; OBJ is a device etc.
+
+- &hila
+  form: hila
+  tone: H
+  class: vs
+  gloss: be alive
+  senses:
+    - def: SUBJ is alive; SUBJ is a living being of some kind
+    - def: with pfv., SUBJ returns to functionality when it had not been functional before; SUBJ is a mechanical or electronic device
+  derived:
+    - form: hilav-
+      tone: H
+      class: v
+      gloss: raise to life
+      senses:
+        - def: SUBJ raises OBJ from the dead, esp.\ in a Christian sense; OBJ is (or was) a living being
+        - def: jokingly, SUBJ restores OBJ to functionality; OBJ is a device etc.
+
+- &dek
+  form: dek-
+  tone: LH
+  class: vs
+  gloss: stand
+  senses:
+    - def: SUBJ is standing; SUBJ is a human or other bipedal animal (or physical imitation of such)
+  derived:
+    - form: dekv-
+      tone: LH
+      class: v
+      gloss: cause to stand up
+      senses:
+        - def: SUBJ stands OBJ up; OBJ is a human etc.
+
+#TODO: dekaak-, which requires ek-, which requires serialisation-only verb handling
+
+- &sik
+  form: sik-
+  tone: H
+  class: v
+  gloss: cut
+  senses:
+    - def: SUBJ cuts OBJ, SUBJ divides OBJ using a knife or similar tool
+  derived:
+    - form: sikja
+      tone: H
+      class: n
+      gloss: knife
+      senses:
+        - def: with \lem{nirrhe}, a knife, esp.\ of kitchen use size #TODO - make this not require manual TeX code
+        - def: with \lem{urhu}, a sword or machete or other such large cutting tool
+
+- &nirrhe
+  form: nirrhe
+  tone: H
+  class: v
+  gloss: for a small tool to be there
+  senses:
+    - def: SUBJ is located; SUBJ is a non-mechanical tool small enough to be manipulated in one hand (e.g.\ a knife or trowel)
+    - def: SUBJ moves OBJ; OBJ is a small tool etc.
+    - def: SUBJ moves; SUBJ is a small tool etc.
+    - def: OBL possesses OBJ; OBJ is small tool etc.
+
+- &urhu
+  form: urhu
+  tone: L
+  class: v
+  gloss: for a large tool to be there
+  senses:
+    - def: SUBJ is located; SUBJ is a non-mechanical tool large enough to require two hands to manipulate naturally (e.g.\ a shovel or broom)
+    - def: SUBJ moves OBJ; OBJ is a large tool etc.
+    - def: SUBJ moves; SUBJ is a large tool etc.
+    - def: OBL possesses OBJ; OBJ is a large tool etc.
+
+- &tirha
+  form: tirha
+  tone: L
+  class: v
+  gloss: for text data to be there
+  senses:
+    - def: SUBJ is located; SUBJ is digital text data
+    - def: OBL possesses SUBJ; SUBJ is digital text data
+    - def: OBL knows OBJ/COMP; OBJ/COMP is a fact or data point
+      #TODO: derivations for sharing digital data

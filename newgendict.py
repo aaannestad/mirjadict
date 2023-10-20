@@ -25,8 +25,6 @@ for item in dictlist:
             for lemma in item['derived']:
                 checkEntry(lemma, 'gloss', lemma['form'])
 
-teststring = 'OBJ, thing, other thing, SUBJ'
-
 #sort dictionary
 sortdict = sorted(dictlist, key = lambda x: x['form'])
 
