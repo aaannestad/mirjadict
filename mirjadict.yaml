@@ -172,16 +172,16 @@
   class: v
   gloss: flow
   senses:
-    - def: SUBJ flows; SUBJ is a liquid
-    - def: SUBJ pours or pushes OBJ; OBJ is a liquid
-    - def: OBL possesses an uncontained mass of OBJ; OBJ is a liquid
+    - def: SUBJ flows; SUBJ is a low-viscosity liquid such as water
+    - def: SUBJ pours or pushes OBJ; OBJ is a liquid etc
+    - def: OBL possesses an uncontained mass of OBJ; OBJ is a liquid etc
   derived:
     - form: xalhhessa
       tone: L
       class: v
       gloss: for a liquid to be there
       senses:
-        - def: SUBJ is located; SUBJ is an uncontained mass of liquid
+        - def: SUBJ is located; SUBJ is an uncontained mass of liquid etc
 
 - &syyte
   form: syyte
@@ -325,13 +325,13 @@
     - def: SUBJ does the aforementioned action, SUBJ does it, SUBJ does that
     - def: SUBJ does OBJ; OBJ is an action
   derived:
-    - form: v-
+    - form: -v-
       tone: EMPTY
       class: dsuff
       gloss: INTENT
       senses:
         - def: derives verbs for actions performed intentionally by SUBJ, or state changes brought about by SUBJ
-    - form: va
+    - form: -va
       tone: EMPTY
       class: dsuff
       gloss: MCAUS
@@ -575,3 +575,619 @@
     - def: OBL possesses SUBJ; SUBJ is digital text data
     - def: OBL knows OBJ/COMP; OBJ/COMP is a fact or data point
       #TODO: derivations for sharing digital data
+
+- &hini
+  form: hini
+  tone: H
+  class: v
+  gloss: for a flower to be there
+  senses:
+    - def: SUBJ is located; SUBJ is a flower or other small plant
+    - def: SUBJ moves OBJ; OBJ is a flower etc.
+    - def: SUBJ moves; SUBJ is a flower etc.
+    - def: OBL possesses OBJ; OBJ is a flower etc.
+
+- &hete
+  form: hete
+  tone: L
+  class: v
+  gloss: for packages to be there
+  senses:
+    - def: SUBJ is located; SUBJ is a group or mass or pile of packages
+    - def: SUBJ moves OBJ; OBJ is a group etc of packages
+    - def: SUBJ moves; SUBJ is a group etc of packages
+    - def: OBL possesses OBJ; OBJ is a group etc of packages
+
+- &uru
+  form: uru
+  tone: L
+  class: v
+  gloss: for a bowl to be there
+  senses:
+    - def: SUBJ is located; SUBJ is a bowl or other bowl-shaped object
+    - def: SUBJ moves OBJ; OBJ is a bowl etc.
+    - def: SUBJ moves; SUBJ is a bowl etc.
+    - def: OBL possesses OBJ; OBJ is a bowl etc.
+
+- &niko
+  form: niko
+  tone: LH
+  class: vs
+  gloss: be happy
+  senses:
+    - def: SUBJ is happy, content
+    - def: OBJ is happy about or likes OBL, OBL makes OBJ happy
+
+- &nige
+  form: nige
+  tone: HL
+  class: v
+  gloss: for a small animal to be there
+  senses:
+    - def: SUBJ is located; SUBJ is a small four-footed animal
+    - def: SUBJ moves OBJ; OBJ is a small animal etc.
+    - def: SUBJ moves; SUBJ is a small animal etc.
+    - def: OBL possesses OBJ; OBJ is a small animal etc.
+
+- &atta
+  form: atta
+  tone: L
+  class: vs
+  gloss: hot (of weather)
+  senses:
+    - def: the weather is hot, it is hot out
+    - def: SUBJ is hot; SUBJ is a volume of space or period of time
+
+- &jana
+  form: jana
+  tone: HL
+  class: v
+  gloss: sing
+  senses:
+    - def: SUBJ sings, SUBJ makes musical noices with SUBJ's voice
+    - def: SUBJ sings OBJ; OBJ is a song with lyrics
+  derived: 
+    - form: janaja
+      tone: HL
+      class: n
+      gloss: microphone
+      senses:
+        - def: a microphone, especially a stage mic or other large mic meant for being sung into
+
+- &nega
+  form: nega
+  tone: LH
+  class: v
+  gloss: for digital audiovisual data to be there
+  senses:
+    - def: SUBJ is located; SUBJ is digital audio or video or audiovisual data such as a video file or sound file
+    - def: OBL possesses SUBJ; SUBJ is digital audiovisual data
+    - def: OBL knows OBJ, OBL knows how to do OBJ; OBJ is a method or process or action
+      #TODO: derivations for sharing digital data
+
+- &ikke
+  form: ikke
+  tone: H
+  class: v
+  gloss: for a laptop to be there
+  senses:
+    - def: SUBJ is located; SUBJ is a laptop or other large but hand-portable electronic device
+    - def: SUBJ moves OBJ; OBJ is a laptop etc.
+    - def: SUBJ moves; SUBJ is a laptop etc.
+    - def: OBL possesses OBJ; OBJ is a laptop etc.
+
+- &weje
+  form: weje
+  tone: HL
+  class: vs
+  gloss: sit
+  senses:
+    - def: SUBJ is sitting; SUBJ is a human or other bipedal animal (or physical imitation of such)
+
+- &koja
+  form: koja
+  tone: H
+  class: v
+  gloss: for a bottle to be there
+  senses:
+    - def: SUBJ is located; SUBJ is a bottle or jar or other tall, narrow cylindrical container
+    - def: SUBJ moves OBJ; OBJ is a bottle etc.
+    - def: SUBJ moves; SUBJ is a bottle etc.
+    - def: OBL possesses OBJ; OBJ is a bottle etc.
+
+- &tesse
+  form: tesse
+  tone: H
+  class: v
+  gloss: run
+  senses:
+    - def: SUBJ runs; SUBJ is a human or other bipedal animal (or physical imitation of such)
+  derived:
+    - form: tesseja
+      tone: H
+      class: n
+      gloss: treadmill
+      senses:
+        - def: a treadmill or other such device for running in place for exercise
+
+- &ago
+  form: ago
+  tone: L
+  class: v
+  gloss: work
+  senses:
+    - def: SUBJ puts in effort, does labour, works at something
+    - def: SUBJ works at or puts in effort towards OBJ; OBJ is an activity or task
+
+- &sumu
+  form: sumu
+  tone: L
+  class: vs
+  gloss: sleep
+  senses:
+    - def: SUBJ is asleep; SUBJ is a living creature
+    - def: SUBJ is powered on but in a state of minimal activity pending user input; SUBJ is an electronic device
+  derived:
+    - form: sumuv-
+      tone: L
+      class: v
+      gloss: put to sleep
+      senses:
+        - def: SUBJ puts OBJ to sleep; OBJ is a living creature
+        - def: SUBJ puts OBJ in a state of minimal activity pending further input; OBJ is an electronic device
+          #TODO: derivation for 'medicine that does thing'
+
+- &lappa
+  form: lappa
+  tone: LH
+  class: v
+  gloss: wake up
+  senses:
+    - def: SUBJ wakes up, SUBJ exits sleep; SUBJ is a living creature
+    - def: SUBJ returns to full activity mode; SUBJ is an electronic device
+  derived:
+    - form: lappav-
+      tone: LH
+      class: v
+      gloss: wake up
+      senses:
+        - def: SUBJ wakes up OBJ; OBJ is a living creature
+        - def: SUBJ causes OBJ to return to full activity mode; OBJ is an electronic device
+          #TODO: derivation for 'medicine that does thing'
+
+- &issa
+  form: issa
+  tone: HL
+  class: v
+  gloss: spend time
+  senses:
+    - def: SUBJ spends time doing OBJ; OBJ is an activity or task
+
+- &tyke
+  form: tyke
+  tone: H
+  class: v
+  gloss: for gravel to be there
+  senses:
+    - def: SUBJ is located; SUBJ is a mass of small bits such as gravel or beans
+    - def: SUBJ moves OBJ; OBJ is gravel etc.
+    - def: SUBJ moves; SUBJ is gravel etc.
+    - def: OBL possesses OBJ; OBJ is gravel etc.
+
+- &nixxa
+  form: nixxa
+  tone: HL
+  class: vs
+  gloss: be far away
+  senses:
+    - def: SUBJ is far away from the speaker
+    - def: SUBJ is far away from OBL
+
+- &lhjarru
+  form: lhjarru
+  tone: LH
+  class: v
+  gloss: for jewelry to be there
+  senses:
+    - def: SUBJ is located; SUBJ is a piece of jewelry or other small decorative item
+    - def: SUBJ moves OBJ; OBJ is jewelry etc.
+    - def: SUBJ moves; SUBJ is jewelry etc.
+    - def: OBL possesses OBJ; OBJ is jewelry etc.
+
+- &iti
+  form: iti
+  tone: H
+  class: v
+  gloss: close
+  senses:
+    - def: SUBJ closes OBJ; OBJ is a door or swinging lid or other such device that closes by swinging shut
+
+- &siva
+  form: siva
+  tone: H
+  class: v
+  gloss: perform a program
+  senses:
+    - def: SUBJ executes OBJ; SUBJ is an electronic device or piece of software, OBJ is a program or piece of software
+    - def: SUBJ performs a pre-scripted activity such as a ceremony or play or cultural script
+
+- &hissi
+  form: hissi
+  tone: HL
+  class: vs
+  gloss: be bright
+  senses:
+    - def: SUBJ gives off light, SUBJ is bright; SUBJ is a light source
+    - def: SUBJ is overwhelming or unpleasantly intense
+    - def: the weather is sunny, it is sunny and bright out
+  derived:
+    - form: hissiv-
+      tone: HL
+      class: v
+      gloss: turn on
+      senses:
+        - def: SUBJ turns on OBJ; OBJ is a light source
+        - def: SUBJ turns on a light in OBJ; OBJ is a room or other space
+
+- &sinna
+  form: sinna
+  tone: L
+  class: vs
+  gloss: be quiet
+  senses:
+    - def: SUBJ is quiet, SUBJ is making little or no noise
+  derived:
+    - form: sinnav-
+      tone: L
+      class: v
+      gloss: turn down volume
+      senses:
+        - def: SUBJ causes OBJ to become quiet; OBJ is usually but not exclusively an audio output device
+
+- &usi
+  form: usi
+  tone: HL
+  class: vs
+  gloss: be sad
+  senses:
+    - def: SUBJ is sad, upset, frustrated, disappointed
+    - def: OBL is sad etc about OBJ
+
+- &gis
+  form: gis
+  tone: H
+  class: vs
+  gloss: ping
+  senses:
+    - def: SUBJ sends OBJ a digital notification or message, SUBJ pings OBJ, SUBJ calls OBJ
+  derived:
+    - form: gisja
+      tone: H
+      class: n
+      gloss: notification
+      senses:
+        - def: a notification, especially a push notification or similar popup
+
+- &dise
+  form: dise
+  tone: HL
+  class: vs
+  gloss: be broken
+  senses:
+    - def: SUBJ is broken, SUBJ is nonfunctional, especially due to physical damage; SUBJ is a mechanical or electronic device
+  derived:
+    - form: disev-
+      tone: HL
+      class: v
+      gloss: break
+      senses:
+        - def: SUBJ breaks OBJ and renders it nonfunctional; OBJ is a mechanical or electronic device
+
+- &lhimo
+  form: lhimo
+  tone: LH
+  class: v
+  gloss: decide
+  senses:
+    - def: SUBJ decides upon OBJ / decides to do COMP
+  derived:
+    - form: lhimod-
+      tone: LH
+      class: v
+      gloss: accidentally decide
+      senses:
+        - def: in a situation where a choice was previously discussed or considered, SUBJ acts in such a way that OBJ / COMP is now either the only possible choice or effectively chosen anyway, despite SUBJ's likely lack of awareness of this effect of their action
+
+- &dixu
+  form: dixu
+  tone: L
+  class: v
+  gloss: find
+  senses:
+    - def: SUBJ finds or obtains OBJ, especially without specifically searching for OBJ
+
+- &vimm
+  form: vimm-
+  tone: L
+  class: vs
+  gloss: be steeping
+  senses:
+    - def: SUBJ is steeping in or soaking in OBL; OBL is a liquid or possibly other fluid
+  derived:
+    - form: vimmav-
+      tone: L
+      class: v
+      gloss: steep
+      senses:
+        - def: SUBJ causes OBJ to soak in or steep in OBL; OBL is a liquid etc
+
+- &naggja
+  form: naggja
+  tone: HL
+  class: v
+  gloss: measure out
+  senses:
+    - def: SUBJ counts out or measures out OBJ; OBJ is a set of discrete items
+    - def: SUBJ delimits OBJ into one or more discrete zones; OBJ is a continuous space
+  derived:
+    - form: naggjaja
+      tone: HL
+      class: n
+      gloss: boundary
+      senses:
+        - def: a boundary, a limit, a division in a continuous space
+
+- &gimy
+  form: gimy
+  tone: H
+  class: vs
+  gloss: be cool
+  senses:
+    - def: the weather is cool, it is cool out
+
+- &juma
+  form: juma
+  tone: L
+  class: v
+  gloss: be odd
+  senses:
+    - def: OBL considers OBJ/COMP odd or surprising
+
+- &nyit
+  form: nyit-
+  tone: HL
+  class: v
+  gloss: be outdoors
+  senses:
+    - def: SUBJ is outdoors, SUBJ is not inside a building or other enclosed space
+    - def: SLZ, VERB is done outdoors
+
+- &niiv
+  form: niiv-
+  tone: L
+  class: v
+  gloss: gloop
+  senses:
+    - def: SUBJ flows; SUBJ is a high-viscosity liquid like honey
+    - def: SUBJ pours or pushes OBJ; OBJ is a liquid etc
+    - def: OBL possesses an uncontained mass of OBJ; OBJ is a liquid etc
+  derived:
+    - form: niivyssa
+      tone: L
+      class: v
+      gloss: for a thick liquid to be there
+      senses:
+        - def: SUBJ is located; SUBJ is an uncontained mass of liquid etc
+
+- &dak-
+  form: dak-
+  tone: L
+  class: v
+  gloss: for a block to be there
+  senses:  
+    - def: SUBJ is located; SUBJ is a small, hand-sized block such as a brick
+    - def: SUBJ moves OBJ; OBJ is a block etc.
+    - def: SUBJ moves; SUBJ is a block etc.
+    - def: OBL possesses OBJ; OBJ is a block etc.
+
+- &ven
+  form: ven-
+  tone: L
+  class: vs
+  gloss: for a screen to show
+  senses:
+    - def: SUBJ is showing OBJ; SUBJ is a digital display
+  derived:
+    - form: venav-
+      tone: L
+      class: v
+      gloss: show
+      senses:
+        - def: SUBJ causes a digital display to show OBJ
+    - form: venja
+      tone: L
+      class: v
+      gloss: screen
+      senses:
+        - def: a screen, a monitor, a digital display of some kind
+
+- &ki
+  form: ki
+  tone: H
+  class: v
+  gloss: click
+  senses:
+    - def: SUBJ clicks on OBJ, SUBJ taps OBJ; OBJ is a location or item on a digital display
+  derived:
+    - form: kija
+      tone: H
+      class: n
+      gloss: mouse
+      senses:
+        - def: a mouse or other device used to move a cursor on a digital display and interact with interface elements
+        - def: the cursor on a digital display
+
+- &sewa
+  form: sewa
+  tone: HL
+  class: vs
+  gloss: be tired
+  senses:
+    - def: SUBJ is low on or out of battery, SUBJ has run out of stored energy; SUBJ is an electrical or electronic device
+    - def: SUBJ is tired, SUBJ is low on energy; SUBJ is a living being
+
+- &vis
+  form: vis-
+  tone: L
+  class: v
+  gloss: type
+  senses:
+    - def: SUBJ types text
+    - def: SUBJ types OBJ; OBJ is text
+  
+- &mana
+  form: mana
+  tone: L
+  class: v
+  gloss: move a cursor
+  senses:
+    - def: SUBJ moves a mouse cursor
+    - def: SUBJ moves OBJ; SUBJ is a mouse cursor
+    - def: SUBJ moves; SUBJ is a mouse cursor
+  derived:
+    - form: manassa
+      tone: L
+      class: v
+      gloss: for a cursor to be there
+      senses:
+        - def: SUBJ is located; SUBJ is a mouse cursor
+        - def: OBL possesses OBJ; OBJ is a mouse cursor
+
+- &dema
+  form: dema
+  tone: HL
+  class: v
+  gloss: for a screen to be there
+  senses:
+    - def: SUBJ is located; SUBJ is a large flat display like a monitor or televison screen
+    - def: SUBJ moves OBJ; OBJ is a monitor etc
+    - def: SUBJ moves; SUBJ is a monitor etc
+    - def: OBL possesses OBJ; OBJ is a monitor etc
+
+- &duka
+  form: duka
+  tone: L
+  class: v
+  gloss: steal
+  senses:
+    - def: SUBJ takes OBJ from OBL without permission, SUBJ steals OBJ from OBL
+
+- &dysse
+  form: dysse
+  tone: HL
+  class: v
+  gloss: dance
+  senses:
+    - def: SUBJ moves in a visually pleasing manner, SUBJ dances
+
+- &de
+  form: de
+  tone: H
+  class: v
+  gloss: ask
+  senses:
+    - def: SUBJ asks OBL OBJ/COMP; OBJ or COMP is a question
+
+- &virha
+  form: virha
+  tone: LH
+  class: v
+  gloss: climb
+  senses:
+    - def: SUBJ climbs, SUBJ ascends a vertical or near-vertical surface by using all limbs
+
+- &ujje
+  form: ujje
+  tone: HL
+  class: vs
+  gloss: be frustrated
+  senses:
+    - def: OBL is frustrated or upset by OBJ, OBJ causes OBL frustration
+
+- &mylja
+  form: mylja
+  tone: HL
+  class: n
+  gloss: store
+  senses:
+    - def: a store, a place where goods are sold and bought
+
+- &hassu
+  form: hassu
+  tone: H
+  class: n
+  gloss: city
+  senses:
+    - def: a city, an urban settlement
+
+- &samma
+  form: samma
+  tone: L
+  class: n
+  gloss: leaf
+  senses:
+    - def: a leaf or other photosynthetic projection from a plant
+
+- &enosamma
+  form: enosamma
+  tone: HL
+  class: n
+  gloss: tea leaf
+  etym:
+    relation: compound
+    sources:
+      - *eno
+      - *samma
+  senses:
+    - def: a tea leaf or leaves
+
+- &yle
+  form: yle
+  tone: LH
+  class: n
+  gloss: cup
+  senses:
+    - def: a cup, a mug, a small container for holding liquid to drink from
+
+- &yima
+  form: yima
+  tone: L
+  class: n
+  gloss: time
+  senses:
+    - def: a span of time, a length of time
+
+- &ete
+  form: ete
+  tone: H
+  class: n
+  gloss: house
+  senses:
+    - def: a house, a home, a building or set of rooms someone lives in
+
+- &ima
+  form: ima
+  tone: LH
+  class: n
+  gloss: morning
+  senses:
+    - def: morning, time between about 5 AM and 11 AM
+    - def: breakfast, the regular morning meal
+
+- &tyro
+  form: tyro
+  tone: L
+  class: n
+  gloss: news
+  senses:
+    - def: the news, the happenings, the things that are going on at the moment

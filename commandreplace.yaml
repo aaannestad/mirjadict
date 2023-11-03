@@ -3,3 +3,5 @@ OBJ: \obj{}
 OBL: \obl{}
 COMP: \comp{}
 EMPTY: ∅
+SLZ: \slz{}
+VERB: \vb{}
