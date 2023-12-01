@@ -1052,7 +1052,7 @@
   gloss: move a cursor
   senses:
     - def: SUBJ moves a mouse cursor
-    - def: SUBJ moves OBJ; SUBJ is a mouse cursor
+    - def: SUBJ moves OBJ; OBJ is a mouse cursor
     - def: SUBJ moves; SUBJ is a mouse cursor
   derived:
     - form: manassa
@@ -1191,3 +1191,13 @@
   gloss: news
   senses:
     - def: the news, the happenings, the things that are going on at the moment
+
+- &nisa
+  form: nisa
+  tone: LH
+  class: n
+  gloss: phone
+  senses:
+    - def: a phone, a smartphone, a handheld computing device
+      extext: nho suru jehamminisata
+      exdef: I sent him a message with my phone
