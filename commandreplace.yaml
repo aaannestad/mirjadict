@@ -5,3 +5,5 @@ COMP: \comp{}
 EMPTY: ∅
 SLZ: \slz{}
 VERB: \vb{}
+#PFV: \pfv{}
+#NOUN: \noun{}

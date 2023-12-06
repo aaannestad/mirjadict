@@ -1201,3 +1201,109 @@
     - def: a phone, a smartphone, a handheld computing device
       extext: nho suru jehamminisata
       exdef: I sent him a message with my phone
+
+- &jekk
+  form: jekk-
+  tone: L
+  class: vs
+  gloss: clean
+  senses:
+    - def: SUBJ is clean, SUBJ is free of grime/pathogens and safe to handle
+  derived:
+    - form: jekkv-
+      tone: L
+      class: v
+      gloss: clean
+      senses:
+        - def: SUBJ cleans OBJ, SUBJ removes grime/pathogens from OBJ
+          extext: jekkavatakajjata iini
+          exdef: eat only after washing your hands
+
+- &ho
+  form: ho
+  tone: H
+  class: vs
+  gloss: be on
+  senses:
+    - def: SUBJ is on, SUBJ is energised; SUBJ is an electrically powered device
+  derived:
+    - form: hov-
+      tone: H
+      class: v
+      gloss: turn on
+      senses:
+        - def: SUBJ turns OBJ on, SUBJ connects power to OBJ; OBJ is an electrically powered device
+
+- &get
+  form: get-
+  tone: H
+  class: vs
+  gloss: be off
+  senses:
+    - def: SUBJ is off, SUBJ is without power; SUBJ is an electrically powered device
+  derived:
+    - form: getv-
+      tone: H
+      class: v
+      gloss: turn off
+      senses:
+        - def: SUBJ turns OBJ off, SUBJ disconnects power from OBJ; OBJ is an electrically powered device
+
+- &kjati
+  form: kjati
+  tone: HL
+  class: vs
+  gloss: sour
+  senses:
+    - def: SUBJ tastes sour
+    - def: with PFV; SUBJ becomes sour esp. due to lactic acid fermentation
+  derived:
+    - form: kjativ-
+      tone: HL
+      class: v
+      gloss: make sour
+      senses:
+        - def: SUBJ adds a sour taste to OBJ
+        - def: SUBJ ferments OBJ via lactic acid fermentation
+    - form: kjatija
+      tone: HL
+      class: n
+      gloss: acid
+      senses:
+        - def: acid, vinegar
+    - form: kjati
+      tone: HL
+      class: adj
+      gloss: sour
+      senses:
+        - def: NOUN is sour, NOUN has a sour taste
+
+- &inne
+  form: inne
+  tone: HL
+  class: vs
+  gloss: sweet
+  senses:
+    - def: SUBJ tastes sweet
+    - def: with PFV; SUBJ becomes sweet, e.g. due to ripening
+  derived:
+    - form: innev-
+      tone: HL
+      class: v
+      gloss: sweeten
+      senses:
+        - def: SUBJ adds a sweet taste to OBJ
+        - def: SUBJ allows OBJ to ripen; OBJ is a fruit
+        - def: SUBJ allows OBJ to sweeten due to malting or kouji enzymes; OBJ is grain
+    - form: inneja
+      tone: HL
+      class: n
+      gloss: sweetener
+      senses:
+        - def: a sweetener, such as sugar or honey
+    - form: inne
+      tone: HL
+      class: adj
+      gloss: sweet
+      senses:
+        - def: NOUN is sweet, NOUN has a sweet taste
