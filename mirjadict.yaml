@@ -401,6 +401,15 @@
     - def: SUBJ supports OBL
     - def: SUBJ is a reason behind OBL, SUBJ explains OBL at least in part
     - def: SUBJ is basic, SUBJ is fundamental
+  derived:
+    - form: ynnaja
+      tone: LH
+      class: v
+      gloss: support
+      senses:
+        - def: a support, a load-bearing structure
+        - def: a reason, a logical basis for a conclusion
+
 
 - &gyrh
   form: gyrh-
@@ -427,6 +436,13 @@
     - def: SUBJ tells a story, SUBJ relates a narrative
     - def: SUBJ tells or relates OBJ, OBJ is a narrative of some kind
     - def: SUBJ relates how COMP happened, SUBJ depicts COMP
+  derived:
+    - form: samaro
+      tone: H
+      class: n
+      gloss: story
+      senses: 
+        - def: a story, a narrative
 
 - &dega
   form: dega
@@ -1044,6 +1060,14 @@
   senses:
     - def: SUBJ types text
     - def: SUBJ types OBJ; OBJ is text
+  derived:
+    - form: visja
+      tone: L
+      class: n
+      gloss: keyboard
+      senses:
+        - def: a keyboard for inputting text
+        - def: a software system that understands keyboard input and passes text output to the operating system
   
 - &mana
   form: mana
@@ -1063,7 +1087,7 @@
         - def: SUBJ is located; SUBJ is a mouse cursor
         - def: OBL possesses OBJ; OBJ is a mouse cursor
 
-- &dema
+- &demaHL
   form: dema
   tone: HL
   class: v
@@ -1113,6 +1137,13 @@
   gloss: be frustrated
   senses:
     - def: OBL is frustrated or upset by OBJ, OBJ causes OBL frustration
+  derived:
+    - form: ujje 
+      tone: HL
+      class: v
+      gloss: uselessly
+      senses:
+        - def: SLZ, SUBJ attempts VERB but fails and gives up
 
 - &mylja
   form: mylja
@@ -1307,3 +1338,675 @@
       gloss: sweet
       senses:
         - def: NOUN is sweet, NOUN has a sweet taste
+
+- &kalhja
+  form: kalhja
+  tone: H
+  class: n
+  gloss: apple
+  senses:
+    - def: an apple, a pear, any fruit of the Malinae
+
+- &jukk-
+  form: jukk-
+  tone: L
+  class: v
+  gloss: heat
+  senses:
+    - def: SUBJ heats OBJ to the point of inducing some kind of state change (cooking, melting, etc)
+  derived:
+    - form: jukkja
+      tone: L
+      class: n
+      gloss: oven
+      senses:
+        - def: an oven, a furnace
+
+- &dena
+  form: dena
+  tone: HL
+  class: v
+  gloss: watch/read
+  senses:
+    - def: SUBJ reads or watches or consumes OBJ; OBJ is a piece of communicative media such as a book or film or podcast
+
+- &hatja
+  form: hatja
+  tone: HL
+  class: n
+  gloss: hammer
+  senses:
+    - def: a hammer, a mallet, a tool for hitting
+
+- &tyvano
+  form: tyvano
+  tone: HL
+  class: n
+  gloss: memory
+  senses:
+    - def: a memory, esp.\ of a specific event or experience
+
+- &munny
+  form: munny
+  tone: H
+  class: n
+  gloss: earth
+  senses:
+    - def: the planet Earth
+
+- &assa
+  form: assa
+  tone: HL
+  class: n
+  gloss: water
+  senses:
+    - def: water suitable for drinking, clean water
+
+- &lijere
+  form: lijere
+  tone: HL
+  class: n
+  gloss: ring
+  senses:
+    - def: a ring used as jewelry
+
+- &tuga
+  form: tuga
+  tone: LH
+  class: n
+  gloss: wall
+  senses:
+    - def: a wall of a room or other full enclosure
+
+- &gyi
+  form: gyi
+  tone: H
+  class: n
+  gloss: food
+  senses:
+    - def: food, nutrition, feed, edible matter
+
+- &ennaro
+  form: ennaro
+  tone: HL
+  class: n
+  gloss: flower
+  senses:
+    - def: a flower, a brightly-coloured star-like form
+
+- &anna
+  form: anna
+  tone: HL
+  class: n
+  gloss: friend
+  senses:
+    - def: a friend, a positive acquaintance
+
+- &malla
+  form: malla
+  tone: L
+  class: n
+  gloss: laptop
+  senses:
+    - def: a laptop or other such portable but medium-sized electronic device
+
+- &nira
+  form: nira
+  tone: LH
+  class: n
+  gloss: road
+  senses:
+    - def: a road, a path, a street, any prepared route for travel
+
+- &denna
+  form: denna
+  tone: H
+  class: n
+  gloss: hat
+  senses:
+    - def: a hat or other such item worn by setting on the head
+
+- &maali
+  form: maali
+  tone: H
+  class: n
+  gloss: cat
+  senses:
+    - def: a cat, a member of the Felidae, especially a housecat
+
+- &naga
+  form: naga
+  tone: H
+  class: v
+  gloss: make a mistake
+  senses:
+    - def: make a mistake, do something incorrectly
+  derived: 
+    - form: ngal-
+      tone: H
+      class: v
+      gloss: mistakenly
+      senses:
+        - def: SLZ, SUBJ does VERB in an incorrect manner or with mistakes
+        - def: SLZ, SUBJ does VERB when such action was inappropriate
+    - form: nagarro
+      tone: H
+      class: n
+      gloss: mistake
+      senses:
+        - def: a mistake, a miss, an accident
+        - def: a mess or other problematic situation caused unintentionally
+
+- &nasyi
+  form: nasyi
+  tone: HL
+  class: n
+  gloss: sun
+  senses:
+    - def: a star, esp.\ the sun
+
+- &ri
+  form: ri
+  tone: L
+  class: n
+  gloss: day
+  senses:
+    - def: daytime, a day from sunrise to sunset
+
+- &demaL
+  form: dema
+  tone: L
+  class: n
+  gloss: child
+  senses:
+    - def: a child, a young human, especially under twelve years old
+
+- &ina
+  form: ina
+  tone: LH
+  class: n
+  gloss: video
+  senses:
+    - def: a video, a movie, an animated image with or without sound
+
+- &tona
+  form: tona
+  tone: L
+  class: n
+  gloss: table
+  senses:
+    - def: a table or other large flat horizontal surface
+
+- &nerre
+  form: nerre
+  tone: H
+  class: n
+  gloss: pot
+  senses:
+    - def: a pot or saucepan, a deep container for cooking food
+
+- &ujju
+  form: ujju
+  tone: L
+  class: n
+  gloss: milk
+  senses:
+    - def: milk, esp.\ from plant sources
+
+- &dixa
+  form: dixa
+  tone: HL
+  class: n
+  gloss: foot
+  senses:
+    - def: a foot, the flexible end of an appendage used for support and/or locomotion
+
+- &saema
+  form: saema
+  tone: HL
+  class: n
+  gloss: clothes
+  senses:
+    - def: an item of clothing
+
+- &jetta
+  form: jetta
+  tone: H
+  class: n
+  gloss: space
+  senses:
+    - def: a vacuum, a volume with little to no matter contained in it
+    - def: space, outer space, the cosmos
+
+- &mjeere
+  form: mjeere
+  tone: L
+  class: n
+  gloss: water
+  senses:
+    - def: water found out in nature, non-drinkable water (freshwater or seawater)
+
+- &hako
+  form: hako
+  tone: L
+  class: n
+  gloss: door
+  senses:
+    - def: a door that opens by swinging in an arc via hinges
+
+- &jettanira
+  form: jettanira
+  tone: HL
+  class: n
+  gloss: orbit
+  senses:
+    - def: orbit, orbital trajectory
+  etym:
+    relation: compound
+    sources:
+      - *jetta
+      - *nira
+
+- &vani
+  form: vani
+  tone: H
+  class: n
+  gloss: room
+  senses:
+    - def: a room, a delimited interior space
+
+- &yika
+  form: yika
+  tone: HL
+  class: v
+  gloss: steal
+  senses:
+    - def: SUBJ obtains or claims ownership of OBJ without actually possessing OBJ, SUBJ steals OBJ
+    - def: SUBJ steals OBJ from OBL
+  derived:
+    - form: yikali
+      tone: HL
+      class: n
+      gloss: thief
+      senses:
+        - def: a thief, a person who has stolen something
+
+- &jaki
+  form: jaki
+  tone: L
+  class: n
+  gloss: light
+  senses:
+    - def: light, brightness, illumination
+
+- &haema
+  form: haema
+  tone: H
+  class: n
+  gloss: receiver
+  senses:
+    - def: an EM wave receiver, especially of information encoded in radio waves
+
+- &jurisi
+  form: jurisi
+  tone: HL
+  class: n
+  gloss: kettle
+  senses:
+    - def: a kettle, a container to heat water in
+
+- &wajenna
+  form: wajenna
+  tone: L
+  class: n
+  gloss: second
+  senses:
+    - def: a second (a measure of time)
+
+- &wonne
+  form: wonne
+  tone: L
+  class: n
+  gloss: number
+  senses:
+    - def: a number, a quantity
+    - def: a numeral, a grapheme indicating a quantity
+
+- &ella
+  form: ella
+  tone: HL
+  class: n
+  gloss: wife
+  senses:
+    - def: a wife, a female spouse
+
+- &vakke
+  form: vakke
+  tone: HL
+  class: n
+  gloss: soap
+  senses:
+    - def: soap, either liquid or solid
+
+- &visykija
+  form: visykija
+  tone: LH
+  class: n
+  gloss: mouse and keyboard
+  senses:
+    - def: mouse-and-keyboard as an input system
+    - def: any complete suite of human input devices
+  etym: 
+    relation: juxtaposition
+    sources:
+      - *vis
+      - *ki
+
+- &hise
+  form: hise
+  tone: HL
+  class: n
+  gloss: money
+  senses:
+    - def: money, whether physical cash or abstract values
+
+- &emja
+  form: emja
+  tone: HL
+  class: n
+  gloss: grocery store
+  senses:
+    - def: a grocery store, a supermarket, a store selling general food items
+
+- &aema
+  form: aema
+  tone: H
+  class: n
+  gloss: woman
+  senses:
+    - def: a female human, a woman
+    - def: a female of any species
+
+- &nokka
+  form: nokka
+  tone: H
+  class: n
+  gloss: man
+  senses:
+    - def: a male human, a man
+    - def: a male of any species
+
+- &sii
+  form: sii
+  tone: L
+  class: v
+  gloss: by falling
+  senses:
+    - def: SLZ, VERB is accomplished by falling or otherwise downward in an uncontrolled manner; VERB is a motion
+
+- &ejV
+  form: ejV
+  tone: L
+  class: v
+  gloss: downwards
+  senses:
+    - def: SLZ, VERB happens downward in a controlled manner; VERB is a motion
+
+- &iin
+  form: iin-
+  tone: L
+  class: v
+  gloss: back
+  senses:
+    - def: SLZ, VERB results in a return to a previous state, SUBJ VERBs back
+
+- &ruku
+  form: ruku
+  tone: H
+  class: V
+  gloss: slowly
+  senses:
+    - def: SUBJ tiptoes, SUBJ walks or maneuvers slowly and carefully; SUBJ is a human
+    - def: SLZ, SUBJ does VERB slowly or carefully
+    
+- &jede
+  form: jede
+  tone: LH
+  class: v
+  gloss: each other
+  senses:
+    - def: SLZ, SUBJs do VERB to each other, SUBJs do VERB reciprocally
+    - def: SLZ, SUBJs do VERB in tandem or in response to each other
+
+- &aro
+  form: aro
+  tone: L
+  class: v
+  gloss: forgetfully
+  senses:
+    - def: SLZ, SUBJ does VERB without realising
+    - def: SLZ, SUBJ does VERB having forgotten they intended otherwise
+
+- &vije
+  form: vije
+  tone: L
+  class: v
+  gloss: easily
+  senses:
+    - def: SLZ, SUBJ does VERB easily, SUBJ does VERB without notable difficulty
+    - def: SLZ, SUBJ does VERB carelessly or hastily
+
+- &tty
+  form: -tty
+  tone: EMPTY
+  class: vs
+  gloss: always
+  senses:
+    - def: SLZ, SUBJ always does VERB under the circumstances
+    - def: SLZ, SUBJ characteristically or habitually does VERB
+
+- &nak
+  form: nak-
+  tone: L
+  class: v
+  gloss: immediately
+  senses:
+    - def: SLZ, SUBJ does VERB immediately, without hesitation or delay
+
+- &hasa
+  form: hasa
+  tone: H
+  class: v
+  gloss: quickly
+  senses:
+    - def: SLZ, SUBJ does VERB quickly or hurriedly
+    - def: SLZ, SUBJ does the motion of VERB by running; SUBJ is an animal and VERB is an animal motion verb
+
+- &saga
+  form: saga
+  tone: L
+  class: v
+  gloss: throwing
+  senses:
+    - def: SLZ, SUBJ accomplishes the motion of VERB by throwing a mass; VERB is a caused motion verb
+
+- &ojo
+  form: ojo
+  tone: L
+  class: v
+  gloss: too much
+  senses:
+    - def: SLZ, SUBJ does VERB to a problematic degree, SUBJ overdoes VERB
+
+- &visi
+  form: visi
+  tone: EMPTY
+  class: v
+  gloss: hanging
+  senses:
+    - def: SLZ, VERB locates SUBJ as hanging from a support
+    - def: SLZ, SUBJ accomplishes VERB while hanging from a support
+
+- &gi
+  form: gi
+  tone: L
+  class: v
+  gloss: coming
+  senses:
+    - def: SLZ, SUBJ accomplishes VERB while moving towards the speaker
+
+- &tuk
+  form: tuk-
+  tone: H
+  class: v
+  gloss: ending
+  senses:
+    - def: SLZ, VERB comes to an abrupt end
+
+- &mina
+  form: mina
+  tone: LH
+  class: vs
+  gloss: unendingly
+  senses:
+    - def: SLZ, VERB happens continually without end
+    - def: SLZ, VERB happens repeatedly without end, with no gap between repetitions
+
+- &mi
+  form: mi
+  tone: LH
+  class: v
+  gloss: a bit
+  senses:
+    - def: SLZ, VERB happens just a bit
+
+- &vuku
+  form: vuku
+  tone: L
+  class: v
+  gloss: sneakily
+  senses:
+    - def: SLZ, SUBJ does VERB sneakily or furtively
+
+- &najo
+  form: najo
+  tone: L
+  class: vs
+  gloss: have done
+  senses:
+    - def: SLZ, SUBJ has at least at some point done VERB before
+
+- &nako
+  form: nako
+  tone: LH
+  class: vs
+  gloss: be able
+  senses: 
+    - def: SLZ, SUBJ is able to do VERB, due to inherent ability or permission
+
+
+- &dak
+  form: dak-
+  tone: L
+  class: v
+  gloss: aimlessly
+  senses:
+    - def: SLZ, SUBJ does VERB aimlessly or confusedly, with no externally apparent goal
+
+- &hano
+  form: hano
+  tone: L
+  class: num
+  gloss: two
+  senses:
+    - def: SLZ, two SUBJs do VERB
+    - def: SLZ, SUBJ does VERB to two OBJs
+    - def: SLZ, VERB happens two times
+    - def: two
+
+- &llha
+  form: -llha
+  tone: HL
+  class: appl
+  gloss: towards
+  senses:
+    - def: SLZ, motion of VERB happens towards added OBJ
+    - def: SLZ, information conveyed by VERB is conveyed to added OBJ; VERB is a verb dealing with information transfer
+
+- &je
+  form: je
+  tone: L
+  class: appl
+  gloss: away from
+  senses:
+    - def: SLZ, motion of VERB happens away from added OBJ
+
+- &rh
+  form: rh
+  tone: EMPTY
+  class: appl
+  gloss: in/at
+  senses:
+    - def: SLZ, motion of VERB happens into added OBJ; OBJ is a space or container
+    - def: SLZ, VERB happens at or inside added OBJ; OBJ is a location, space, or container
+    - def: SLZ, VERB locates SUBJ at or inside added OBJ; OBJ is a location, space, or container
+
+- &seke
+  form: seke
+  tone: L
+  class: appl
+  gloss: along
+  senses:
+    - def: SLZ, VERB happens along added OBJ; OBJ is a path or an object that conceptually defines a path
+
+- &mmi
+  form: -mmi
+  tone: H
+  class: appl
+  gloss: using
+  senses:
+    - def: SLZ, SUBJ accomplishes VERB by using added OBJ
+
+- &guru
+  form: guru
+  tone: EMPTY
+  class: appl
+  gloss: beyond
+  senses:
+    - def: SLZ, motion of VERB begins at the near side of added OBJ and passes it to the far side, motion of VERB goes beyond added OBJ
+    - def: SLZ, SUBJ does VERB more than added OBJ
+
+- &hike
+  form: hike
+  tone: L
+  class: appl
+  gloss: off of
+  senses:
+    - def: SLZ, motion of VERB begins at the surface of added OBJ and proceeds to leave it, motion of VERB moves off of added OBJ
+
+- &naka
+  form: naka
+  tone: LH
+  class: appl
+  gloss: out of
+  senses:
+    - def: SLZ, motion of VERB begins inside added OBJ and proceeds out of it, motion of VERB moves out of added OBJ; OBJ is a space or container
+
+- &mo
+  form: mo
+  tone: L
+  class: appl
+  gloss: beside
+  senses:
+    - def: SLZ, VERB happens together with or beside added OBJ
+    - def: SLZ, VERB locates SUBJ together with or beside added OBJ
+
+- &jeka
+  form: jeka
+  tone: L
+  class: appl
+  gloss: in front
+  senses:
+    - def: SLZ, motion of VERB ends in a space in front of added OBJ
+    - def: SLZ, VERB happens in a space in front of added OBJ
+    - def: SLZ, VERB locates SUBJ in a space in front of added OBJ
