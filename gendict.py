@@ -26,7 +26,13 @@ for item in dictlist:
                 checkEntry(lemma, 'gloss', lemma['form'])
 
 #sort dictionary
-sortdict = sorted(dictlist, key = lambda x: x['form'])
+def sortkey(entry):
+    if entry['form'][0] == '-':
+        return entry['form'][1:]
+    else:
+        return entry['form']
+
+sortdict = sorted(dictlist, key = lambda x: sortkey(x))
 
 #find and replace defined strings with LaTeX commands; mapping is found in commandreplace.yaml
 def findandreplace(d, rlist):
@@ -61,7 +67,10 @@ findandreplace(sortdict, replacelist)
 letterlist = []
 
 for entry in sortdict:
-    initletter = entry['form'][0]
+    if entry['form'][0] == '-':
+        initletter = entry['form'][1]
+    else:
+        initletter = entry['form'][0]
     if initletter not in letterlist:
         letterlist.append(initletter)
 
@@ -70,7 +79,10 @@ letterdict = {} #broken out dictionary grouped by letter headers
 for letter in letterlist:
     letterdict[letter] = []
     for entry in sortdict: #note that this assumes sortdict is sorted and does not further sort
-        initletter = entry['form'][0]
+        if entry['form'][0] == '-':
+            initletter = entry['form'][1]
+        else:
+            initletter = entry['form'][0]
         if initletter == letter:
             letterdict[letter].append(entry)
 
