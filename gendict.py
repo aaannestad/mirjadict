@@ -88,6 +88,9 @@ for letter in letterlist:
 
 #actually do the things
 
+#number of words counter
+wordcount = 0
+
 # TeX writing commands
 
 def texbegin(env):
@@ -101,7 +104,6 @@ def twotexcmd(cmd,cont1,cont2):
 
 def writeentry(entry,isderived,indentnum):
 #pass in an entry object, a boolean for 'is this a derived form', and the current number of indents
-
 
     def writeline(line): #pass a line of text, makes it a real line in TeX with indents and a newline
        output.write((indentnum*'  ')+line+'\n')
@@ -180,6 +182,8 @@ with open('dictionary.tex', 'w') as output:
         output.write(texbegin('lettergroup')+'{'+letter.upper()+'}'+'\n')
         for item in letterdict[letter]:
             writeentry(item,False,1)
+            wordcount += 1
         output.write(texend('lettergroup'))
 
     output.write(end)
+    print(str(wordcount)+' headwords in total')
