@@ -2010,3 +2010,19 @@
     - def: SLZ, motion of VERB ends in a space in front of added OBJ
     - def: SLZ, VERB happens in a space in front of added OBJ
     - def: SLZ, VERB locates SUBJ in a space in front of added OBJ
+
+- &hurry
+  form: hurry
+  tone: HL
+  class: v
+  gloss: what happen
+  senses:
+    - def: what is happening?
+
+- &vijja
+  form: vijja
+  tone: HL
+  class: vs
+  gloss: how is
+  senses:
+    - def: how is SUBJ?
