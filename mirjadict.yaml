@@ -78,6 +78,13 @@
   gloss: walk
   senses:
     - def: SUBJ walks; SUBJ is a human or other biped
+  derived:
+    - form: suheti
+      tone: HL
+      class: interj
+      gloss: welcome
+      senses:
+        - def: welcome, come in
 
 - &xagu
   form: xagu
@@ -304,8 +311,16 @@
   class: v
   gloss: for time to pass
   senses:
-    - def: time passes #aekajja 'later on'
+    - def: time passes
     - def: SUBJ passes; SUBJ is one or more intervals of time
+  derived:
+    - form: aekaka
+      tone: HL
+      class: adv
+      gloss: later
+      senses:
+        - def: later on, some time after
+
 
 - &e
   form: e
@@ -1512,6 +1527,13 @@
   gloss: day
   senses:
     - def: daytime, a day from sunrise to sunset
+  derived:
+    - form: riri
+      tone: L
+      class: n
+      gloss: everyday
+      senses:
+        - def: everyday, day-to-day, day-to-day activities
 
 - &demaL
   form: dema
@@ -1759,6 +1781,7 @@
   gloss: back
   senses:
     - def: SLZ, VERB results in a return to a previous state, SUBJ VERBs back
+    - def: SLZ, VERB happens again in the same way as it has happened before
 
 - &ruku
   form: ruku
@@ -1796,8 +1819,8 @@
     - def: SLZ, SUBJ does VERB easily, SUBJ does VERB without notable difficulty
     - def: SLZ, SUBJ does VERB carelessly or hastily
 
-- &tty
-  form: -tty
+- &ttu
+  form: -ttu
   tone: EMPTY
   class: vs
   gloss: always
@@ -1975,6 +1998,13 @@
   senses:
     - def: SLZ, motion of VERB begins at the near side of added OBJ and passes it to the far side, motion of VERB goes beyond added OBJ
     - def: SLZ, SUBJ does VERB more than added OBJ
+  derived:
+    - form: gurunge
+      tone: LH
+      class: FIXME
+      gloss: more than
+      senses:
+        - def: SUBJ does MATRIX VERB to MATRIX OBJ more than it does to OBJ
 
 - &hike
   form: hike
@@ -2026,3 +2056,357 @@
   gloss: how is
   senses:
     - def: how is SUBJ?
+
+- &niha
+  form: niha
+  tone: HL
+  class: n
+  gloss: child
+  senses:
+    - def: a child, an offspring (not young necessarily, just descended from whatever reference)
+
+- &doka
+  form: doka
+  tone: LH
+  class: v
+  gloss: build
+  senses:
+    - def: SUBJ builds or constructs OBJ; OBJ is a building or other infrastructure 
+
+- &kii
+  form: kii
+  tone: H
+  class: adj
+  gloss: small
+  senses:
+    - def: NOUN is small
+
+- &vawa
+  form: vawa
+  tone: L
+  class: v
+  gloss: begin
+  senses:
+    - def: action of SLZ begins
+  derived:
+    - form: vawanaro
+      tone: L
+      class: adv
+      gloss: at first
+      senses:
+        - def: in the beginning, at first, originally
+
+- &nuja
+  form: nuja
+  tone: HL
+  class: adj
+  gloss: black
+  senses:
+    - def: NOUN is black
+  derived:
+    form: niranuja
+    tone: LHL
+    class: n
+    gloss: paved road
+    senses:
+      - def: a road made of asphalt, a modern paved road
+
+- &telle
+  form: telle
+  tone: L
+  class: v
+  gloss: maintain
+  senses:
+    - def: SUBJ maintains or keeps up OBJ, SUBJ keeps OBJ in working condition; OBJ is a tool or piece of infrastructure
+
+- &dijju
+  form: dijju
+  tone: L
+  class: v
+  gloss: flat
+  senses:
+    - def: NOUN is flat, NOUN is evened out
+
+- &nae
+  form: nae
+  tone: L
+  class: v
+  gloss: change
+  senses:
+    - def: SUBJ changes
+    - def: SUBJ changes to become or become more ADJ
+  derived:
+    - form: naenae
+      class: v
+      gloss: more and more
+      senses:
+        - def: SUBJ becomes more and more ADJ
+
+- &tavu
+  form: tavu
+  tone: H
+  class: vs
+  gloss: believe
+  senses:
+    - def: SUBJ believes CLAUSE to be true
+    - def: archaic, SUBJ holds OBJ
+
+- &guja
+  form: guja
+  tone: HL
+  class: vs
+  gloss: building is there
+  senses:
+    - def: SUBJ is located; SUBJ is a building or similar permanent construction
+
+- &nimo
+  form: nimo
+  tone: H
+  class: adj
+  gloss: white
+  senses:
+    - def: SUBJ is white
+
+- &lhanna
+  form: lhanna
+  tone: HL
+  class: n
+  gloss: restaurant
+  senses:
+    - def: a restaurant, a coffee shop, a bar, any establishment where you purchase food and/or drink and consume it on the premises
+  derived:
+    - form: lhannakopi
+      tone: HL
+      class: n
+      gloss: coffee shop
+      senses:
+        - def: a coffee shop
+
+- &karu
+  form: karu
+  tone: H
+  class: v
+  gloss: see
+  senses:
+    - def: SUBJ is visible to OBL
+    - def: SUBJ seems like CLAUSE is true of it
+  derived:
+    - form: karuv-
+      tone: H
+      class: v
+      gloss: look at
+      senses:
+        - def: SUBJ looks at OBJ
+
+- &sara
+  form: sara
+  tone: H
+  class: v
+-nijo	and then	L						concessive
+  gloss: hear
+  senses:
+    - def: SUBJ is audible to OBL
+    - def: SUBJ sounds like CLAUSE, SUBJ makes noise like CLAUSE is true of it
+  derived:
+    - form: sarav-
+      tone: H
+      class: v
+      gloss: listen
+      senses:
+        - def: SUBJ listens to OBJ
+
+- &vima
+  form: vima
+  tone: H
+  class: v
+  gloss: feel like
+  senses:
+    - def: SUBJ feels like CLAUSE is true, SUBJ gives off vibes like CLAUSE is true
+
+- &rana
+  form: rana
+  tone: L
+  class: vs
+  gloss: group
+  senses:
+    - def: SUBJ is a group, SUBJ moves like a group
+    - def: SLZ, SUBJ does VERB as a group
+  derived:
+    - form: rana
+      tone: L
+      class: suff
+      gloss: group
+      senses:
+        - def: makes an actor nominal of a group that does VERB's action
+
+- &huko
+  form: huko
+  tone: HL
+  class: v
+  gloss: fight
+  senses:
+    - def: SUBJ fights against OBJ, SUBJ struggles against OBJ, SUBJ competes against OBJ
+  derived:
+    - form: hukorana
+      tone: HL
+      class: n
+      gloss: team
+      senses:
+        - def: a team, an army
+
+- &nni
+  form: -nni
+  tone: L
+  class: slz
+  gloss: do over
+  senses:
+    - def: SLZ, redo the action of VERB, either to get a different result or to repeat the original result
+
+- &ju
+  form: ju
+  tone: L
+  class: n
+  gloss: location
+  senses:
+    - def: a location, a spot, a place, either physically or in a filesystem
+
+- &dassa
+  form: dassa
+  tone: HL
+  class: n
+  gloss: grass
+  senses:
+    - def: grass and other such plants that grow vertically over a large area
+  derived:
+    - form: dassaju
+      tone: HL
+      class: n
+      gloss: field
+      senses:
+        - def: a field, an open grassy area
+
+- &noka
+  form: noka
+  tone: LH
+  class: appl
+  gloss: over
+  senses:
+    - def: SLZ, SUBJ is located all across the surface of OBJ, SUBJ covers OBJ
+
+- &sinu
+  form: sinu
+  tone: HL
+  class: v
+  gloss: meet
+  senses:
+    - def: SUBJ meets OBJ, SUBJ comes across OBJ, SUBJ enters a situation where OBJ is present and noticed
+
+- &dog
+  form: dog-
+  tone: EMPTY
+  class: appl
+  gloss: around
+  senses:
+    - def: SLZ, VERB happens in various places around the space delimited by OBJ
+
+- &rhiki
+  form: rhiki
+  tone: H
+  class: vs
+  gloss: busy
+  senses:
+    - def: SUBJ is busy with OBL; OBL is an activity
+    - def: SUBJ is busy
+  derived:
+    - form: rhikiv-
+      tone: H
+      class: v
+      gloss: bother
+      senses:
+        - def: SUBJ bothers OBJ, SUBJ annoys OBJ
+
+- &amae
+  form: amae
+  tone: LH
+  class: vs
+  gloss: similar
+  senses:
+    - def: SUBJ resembles OBJ, SUBJ is like OBJ
+
+- &lho
+  form: lho
+  tone: L
+  class: v
+  gloss: buy
+  senses:
+    - def: SUBJ buys OBJ
+    - def: SLZ with location verbs, SUBJ purchases OBJ or some appropriate object
+  derived:
+    - form: lhorri
+      tone: L
+      class: n
+      gloss: customer
+      senses:
+        - def: customer, purchaser
+
+- &dawwa
+  form: dawwa
+  tone: L
+  class: vs
+  gloss: be embarrassed
+  senses:
+    - def: SUBJ is embarrassed because of OBL, SUBJ feels awkward because of OBL
+
+- &oro
+  form: oro
+  tone: HL
+  class: vs
+  gloss: be shadowed
+  senses:
+    - def: SUBJ is in shadow, SUBJ is shadowed by OBL
+  derived:
+    - form: oroju
+      tone: HL
+      class: n
+      gloss: shadow
+      senses:
+        - def: a shadow
+
+- &daxa
+  form: daxa
+  tone: L
+  class: v
+  gloss: talk
+  senses:
+    - def: SUBJ talks about OBJ, SUBJ discusses OBJ
+
+- &da
+  form: da
+  tone: H
+  class: n
+  gloss: time
+  senses:
+    - def: a point in time, a moment
+  derived:
+    - form: -da
+      tone: H
+      class: deriv
+      gloss: time
+      senses:
+        - def: turns a verb or noun into a time when that verb or noun happens
+    - form: dada
+      tone: H
+      class: adv
+      gloss: sometimes
+      senses:
+        - def: sometimes, at times, occasionally
+
+- &awwi
+  form: awwi
+  tone: HL
+  class: vs
+  gloss: okay
+  senses:
+    - def: SUBJ is okay for OBL, SUBJ is not an issue for OBL
+    - def: SUBJ is in an okay state, SUBJ is the way it is meant to be
+    - def: things are okay for OBL, OBL is content with the situation
