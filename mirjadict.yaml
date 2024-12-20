@@ -2202,7 +2202,6 @@
   form: sara
   tone: H
   class: v
--nijo	and then	L						concessive
   gloss: hear
   senses:
     - def: SUBJ is audible to OBL
@@ -2410,3 +2409,110 @@
     - def: SUBJ is okay for OBL, SUBJ is not an issue for OBL
     - def: SUBJ is in an okay state, SUBJ is the way it is meant to be
     - def: things are okay for OBL, OBL is content with the situation
+
+- &in
+  form: in-
+  tone: L
+  class: num
+  gloss: one
+  senses:
+    - def: SLZ, VERB is done by one subject
+    - def: SUBJ is alone, SUBJ is one unit
+    - def: SUBJ is unique
+  derived:
+    - form: inyxu
+      tone: L
+      class: n
+      gloss: uniqueness
+      senses:
+        - def: uniqueness, specialness
+
+- &son
+  form: son-
+  tone: L
+  class: vs
+  gloss: have property
+  senses:
+    - def: OBL possesses SUBJ; SUBJ is an abstract property
+
+- &vulha
+  form: vulha
+  tone: HL
+  class: v
+  gloss: realise
+  senses:
+    - def: SUBJ comes to conclude that CLAUSE is true
+
+- &arhi
+  form: arhi
+  tone: HL
+  class: vs
+  gloss: be normal
+  senses:
+    - def: SUBJ is in a normal state, SUBJ is the way it usually is
+    - def: things are normal
+  derived:
+    - form: arhihi
+      tone: HL
+      class: adv
+      gloss: as usual
+
+- &nokaHL
+  form: noka
+  tone: HL
+  class: adj
+  gloss: other
+  senses:
+    - def: other, different, separate
+
+- &vakk
+  form: vakk-
+  tone: H
+  class: vs
+  gloss: grateful
+  senses:
+    - def: SUBJ is a source of gratitute for OBL, OBL is thankful for SUBJ
+  derived:
+    - form: vakke
+      tone: HL
+      class: interj
+      gloss: thanks
+      senses:
+        - def: thanks, thank you
+
+- &rho
+  form: -rho
+  tone: L
+  class: vs
+  gloss: with difficulty
+  senses:
+    - def: SLZ, VERB is done with difficulty
+
+
+- &si
+  form: si
+  tone: H
+  class: vs
+  gloss: be that way
+  senses:
+    - def: SUBJ is that way
+    - def: things are that way
+  derived:
+    - form: sii
+      tone: H
+      class: interj
+      gloss: yes
+      senses:
+        - def: yes, that is the case
+    - form: sily
+      tone: HL
+      class: interj
+      gloss: no
+      senses:
+        - def: no, that is not the case
+    - form: sessi
+      tone: HL
+      class: conj
+      gloss: but
+      senses:
+        - def: even so, but, still
